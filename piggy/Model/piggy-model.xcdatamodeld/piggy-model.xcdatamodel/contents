@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
+        <attribute name="me" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="benefitedExpenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="beneficitingContacts" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="contacts" inverseEntity="Event" syncable="YES"/>
+        <relationship name="payedExpenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="payingContacts" inverseEntity="Expense" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contacts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="events" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="expenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="event" inverseEntity="Expense" syncable="YES"/>
+    </entity>
+    <entity name="Expense" representedClassName="Expense" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="payback" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quickDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beneficitingContacts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="benefitedExpenses" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="expenses" inverseEntity="Event" syncable="YES"/>
+        <relationship name="payingContacts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="payedExpenses" inverseEntity="Contact" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contact" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Expense" positionX="-54" positionY="-9" width="128" height="150"/>
+        <element name="Event" positionX="-36" positionY="9" width="128" height="105"/>
+    </elements>
+</model>

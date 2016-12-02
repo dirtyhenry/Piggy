@@ -14,6 +14,7 @@
 		00DA1A391DF1E49F00969357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A371DF1E49F00969357 /* LaunchScreen.storyboard */; };
 		00DA1A441DF1E49F00969357 /* piggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A431DF1E49F00969357 /* piggyTests.swift */; };
 		00DA1A4F1DF1E49F00969357 /* piggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A4E1DF1E49F00969357 /* piggyUITests.swift */; };
+		00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */; };
 		18C556E3AC8EBB7E176BB380 /* Pods_piggy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1EDC89EE19CA0A057616F9 /* Pods_piggy.framework */; };
 		EB65D75ED36F75E4B4678D20 /* Pods_piggyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152F0000A245E9625D5BBCFC /* Pods_piggyTests.framework */; };
 		F90637D4BA09DB4871755065 /* Pods_piggyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD18210E771DBB4267B5FFAE /* Pods_piggyUITests.framework */; };
@@ -50,6 +51,7 @@
 		00DA1A4A1DF1E49F00969357 /* piggyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piggyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DA1A4E1DF1E49F00969357 /* piggyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piggyUITests.swift; sourceTree = "<group>"; };
 		00DA1A501DF1E49F00969357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00DA1A601DF1EB9600969357 /* piggy-model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "piggy-model.xcdatamodel"; sourceTree = "<group>"; };
 		09B8A2AE22C499A6B9A3E9C3 /* Pods-piggyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-piggyUITests/Pods-piggyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		152F0000A245E9625D5BBCFC /* Pods_piggyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piggyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22690EBFD159D14600AFA6AE /* Pods-piggy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piggy/Pods-piggy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		00DA1A2D1DF1E49F00969357 /* piggy */ = {
 			isa = PBXGroup;
 			children = (
+				00DA1A5E1DF1EB7100969357 /* Model layer */,
 				00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */,
 				00DA1A301DF1E49F00969357 /* ViewController.swift */,
 				00DA1A321DF1E49F00969357 /* Main.storyboard */,
@@ -140,6 +143,14 @@
 				00DA1A501DF1E49F00969357 /* Info.plist */,
 			);
 			path = piggyUITests;
+			sourceTree = "<group>";
+		};
+		00DA1A5E1DF1EB7100969357 /* Model layer */ = {
+			isa = PBXGroup;
+			children = (
+				00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */,
+			);
+			name = "Model layer";
 			sourceTree = "<group>";
 		};
 		D563CCC5D45995F268C78D28 /* Frameworks */ = {
@@ -446,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */,
 				00DA1A311DF1E49F00969357 /* ViewController.swift in Sources */,
 				00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */,
 			);
@@ -698,6 +710,7 @@
 				00DA1A551DF1E49F00969357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00DA1A561DF1E49F00969357 /* Build configuration list for PBXNativeTarget "piggyTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +719,7 @@
 				00DA1A581DF1E49F00969357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00DA1A591DF1E49F00969357 /* Build configuration list for PBXNativeTarget "piggyUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,8 +728,23 @@
 				00DA1A5B1DF1E49F00969357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00DA1A601DF1EB9600969357 /* piggy-model.xcdatamodel */,
+			);
+			currentVersion = 00DA1A601DF1EB9600969357 /* piggy-model.xcdatamodel */;
+			name = "piggy-model.xcdatamodeld";
+			path = "Model/piggy-model.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 00DA1A231DF1E49F00969357 /* Project object */;
 }
