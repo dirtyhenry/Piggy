@@ -1,0 +1,6 @@
+framework module Pods_piggyUITests {
+  umbrella header "Pods-piggyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

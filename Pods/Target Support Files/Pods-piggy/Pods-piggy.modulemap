@@ -1,0 +1,6 @@
+framework module Pods_piggy {
+  umbrella header "Pods-piggy-umbrella.h"
+
+  export *
+  module * { export * }
+}
