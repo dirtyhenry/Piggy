@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008932621DF8833B0047848B /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008932611DF8833B0047848B /* ContactListTableViewController.swift */; };
 		00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */; };
 		00DA1A341DF1E49F00969357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A321DF1E49F00969357 /* Main.storyboard */; };
 		00DA1A361DF1E49F00969357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A351DF1E49F00969357 /* Assets.xcassets */; };
@@ -16,7 +17,7 @@
 		00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */; };
 		00E06E0D1DF5CD7100D41382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00E06E0C1DF5CD7100D41382 /* GoogleService-Info.plist */; };
 		00E06E131DF5D54900D41382 /* ContactListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E121DF5D54900D41382 /* ContactListInteractor.swift */; };
-		00E06E151DF5D6CB00D41382 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E141DF5D6CB00D41382 /* Contact.swift */; };
+		00E06E151DF5D6CB00D41382 /* ContactEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E141DF5D6CB00D41382 /* ContactEntity.swift */; };
 		00E06E171DF5D7D900D41382 /* ContactListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E161DF5D7D900D41382 /* ContactListPresenter.swift */; };
 		00E06E191DF5DBC500D41382 /* ContactListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E181DF5DBC500D41382 /* ContactListModuleInterface.swift */; };
 		00E06E1B1DF5DFAD00D41382 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E1A1DF5DFAD00D41382 /* AppRoute.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008932611DF8833B0047848B /* ContactListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
 		00DA1A2B1DF1E49F00969357 /* piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00DA1A331DF1E49F00969357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		00DA1A601DF1EB9600969357 /* piggy-model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "piggy-model.xcdatamodel"; sourceTree = "<group>"; };
 		00E06E0C1DF5CD7100D41382 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00E06E121DF5D54900D41382 /* ContactListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListInteractor.swift; sourceTree = "<group>"; };
-		00E06E141DF5D6CB00D41382 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Model/Contact.swift; sourceTree = "<group>"; };
+		00E06E141DF5D6CB00D41382 /* ContactEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactEntity.swift; path = Model/ContactEntity.swift; sourceTree = "<group>"; };
 		00E06E161DF5D7D900D41382 /* ContactListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListPresenter.swift; sourceTree = "<group>"; };
 		00E06E181DF5DBC500D41382 /* ContactListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListModuleInterface.swift; sourceTree = "<group>"; };
 		00E06E1A1DF5DFAD00D41382 /* AppRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
@@ -161,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */,
-				00E06E141DF5D6CB00D41382 /* Contact.swift */,
+				00E06E141DF5D6CB00D41382 /* ContactEntity.swift */,
 			);
 			name = "Model layer";
 			sourceTree = "<group>";
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				00E06E121DF5D54900D41382 /* ContactListInteractor.swift */,
+				008932611DF8833B0047848B /* ContactListTableViewController.swift */,
 				00E06E161DF5D7D900D41382 /* ContactListPresenter.swift */,
 				00E06E181DF5DBC500D41382 /* ContactListModuleInterface.swift */,
 			);
@@ -500,9 +503,10 @@
 				00E06E1B1DF5DFAD00D41382 /* AppRoute.swift in Sources */,
 				00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */,
 				00E06E131DF5D54900D41382 /* ContactListInteractor.swift in Sources */,
-				00E06E151DF5D6CB00D41382 /* Contact.swift in Sources */,
+				00E06E151DF5D6CB00D41382 /* ContactEntity.swift in Sources */,
 				00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */,
 				00E06E191DF5DBC500D41382 /* ContactListModuleInterface.swift in Sources */,
+				008932621DF8833B0047848B /* ContactListTableViewController.swift in Sources */,
 				00E06E171DF5D7D900D41382 /* ContactListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,8 +9,16 @@
 import UIKit
 
 class ContactListInteractor: NSObject {
+    var presenter: ContactListInteractorOutput?
 
-    func findContactsOf(_ referenceContact: Contact) {
-        
-    }    
+}
+
+extension ContactListInteractor: ContactListInteractorInput {
+    func findContacts(of name: String?) {
+        let contact1 = ContactBalanceDeliverer(name: "Aldo", balance: -50.00)
+        let contact2 = ContactBalanceDeliverer(name: "Blaise", balance: +40.00)
+        let contact3 = ContactBalanceDeliverer(name: "Coralie", balance: -5.00)
+
+        presenter?.foundContacts(of: "Me", contacts: [contact1, contact2, contact3])
+    }
 }
