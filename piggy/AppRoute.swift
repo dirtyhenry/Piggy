@@ -51,7 +51,11 @@ class AppRoute {
         addContactInteractor.presenter = addContactPresenter
         addContactPresenter.interactor = addContactInteractor
         addContactPresenter.userInterface = addContactVC
+        addContactPresenter.delegate = self
         addContactVC.eventHandler = addContactPresenter
+        
+        addContactNC.modalPresentationStyle = .overCurrentContext
+        tabBarController.present(addContactNC, animated: true, completion: nil)
     }
     
     
@@ -62,5 +66,15 @@ class AppRoute {
     func sizeForTabBarItem() -> CGSize {
         let dimension = heightOfTabBarItem()
         return CGSize(width: dimension, height: dimension)
+    }
+}
+
+extension AppRoute: AddContactModuleDelegate {
+    func didCancelAddContactAction() {
+        tabBarController.dismiss(animated: true, completion: nil)
+    }
+
+    func didSaveAddContactAction() {
+        tabBarController.dismiss(animated: true, completion: nil)
     }
 }

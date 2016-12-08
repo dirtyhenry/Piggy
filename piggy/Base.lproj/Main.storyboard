@@ -131,8 +131,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cancelButton" destination="tud-rY-WzE" id="aOo-0O-tRw"/>
-                        <outlet property="saveButton" destination="Man-EK-wwG" id="1Rd-M4-7oh"/>
+                        <outlet property="contactNameTextField" destination="JKN-AN-0r1" id="Xqf-4h-C6Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cg7-6u-wie" userLabel="First Responder" sceneMemberID="firstResponder"/>

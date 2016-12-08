@@ -15,6 +15,8 @@ class AddContactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        contactNameTextField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
