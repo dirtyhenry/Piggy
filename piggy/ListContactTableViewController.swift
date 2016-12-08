@@ -1,5 +1,5 @@
 //
-//  ContactListTableViewController.swift
+//  ListContactTableViewController.swift
 //  piggy
 //
 //  Created by Mickaël Floc'hlay on 07/12/2016.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ContactListTableViewController: UITableViewController {
-    var eventHandler: ContactListModuleInterface?
+class ListContactTableViewController: UITableViewController {
+    var eventHandler: ListContactModuleInterface?
     var arraySource: [ContactBalanceViewModel]?
+    var didTapAddContact: () -> () = {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,7 +107,7 @@ class ContactListTableViewController: UITableViewController {
 
 }
 
-extension ContactListTableViewController: ContactListViewInterface {
+extension ListContactTableViewController: ListContactViewInterface {
     func showNoContentMessage(title: String) {
         navigationItem.title = title
         arraySource = []
@@ -117,5 +118,9 @@ extension ContactListTableViewController: ContactListViewInterface {
         navigationItem.title = title
         arraySource = contacts
         tableView.reloadData()
+    }
+    
+    @IBAction func addNewContact() {
+        didTapAddContact()
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ContactListModuleInterface.swift
+//  ListContactModuleInterface.swift
 //  piggy
 //
 //  Created by Mickaël Floc'hlay on 05/12/2016.
@@ -8,20 +8,21 @@
 
 import Foundation
 
-protocol ContactListModuleInterface {
+protocol ListContactModuleInterface {
     func addNewContact()
     func updateView(referenceContactName: String?)
 }
 
-protocol ContactListInteractorInput {
+protocol ListContactInteractorInput {
     func findContacts(of name: String?)
 }
 
-protocol ContactListInteractorOutput {
+protocol ListContactInteractorOutput {
     func foundContacts(of name: String?, contacts: [ContactBalanceDeliverer])
 }
 
-protocol ContactListViewInterface {
+protocol ListContactViewInterface {
     func showNoContentMessage(title: String)
     func showContacts(contacts: [ContactBalanceViewModel], title: String)
+    func addNewContact()
 }

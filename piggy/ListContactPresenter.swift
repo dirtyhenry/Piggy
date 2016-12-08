@@ -1,5 +1,5 @@
 //
-//  ContactListPresenter.swift
+//  ListContactPresenter.swift
 //  piggy
 //
 //  Created by Mickaël Floc'hlay on 05/12/2016.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ContactListPresenter: NSObject {
-    var interactor: ContactListInteractorInput?
-    var userInterface: ContactListViewInterface?
+class ListContactPresenter: NSObject {
+    var interactor: ListContactInteractorInput?
+    var userInterface: ListContactViewInterface?
 }
 
-extension ContactListPresenter: ContactListModuleInterface {
+extension ListContactPresenter: ListContactModuleInterface {
     func addNewContact() {
         //contactListWireframe.presentAddContactInterface()
     }
@@ -23,7 +23,7 @@ extension ContactListPresenter: ContactListModuleInterface {
     }
 }
 
-extension ContactListPresenter: ContactListInteractorOutput {
+extension ListContactPresenter: ListContactInteractorOutput {
     func foundContacts(of name: String?, contacts: [ContactBalanceDeliverer]) {
         let positiveBalanceColor = UIColor(red: 0.0, green: 0.67, blue: 0.0, alpha: 1.0)
         let negativeBalanceColor = UIColor.red

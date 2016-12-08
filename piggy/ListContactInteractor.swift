@@ -1,5 +1,5 @@
 //
-//  ContactListInteractor.swift
+//  ListContactInteractor.swift
 //  piggy
 //
 //  Created by Mickaël Floc'hlay on 05/12/2016.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ContactListInteractor: NSObject {
-    var presenter: ContactListInteractorOutput?
+class ListContactInteractor: NSObject {
+    var presenter: ListContactInteractorOutput?
 
 }
 
-extension ContactListInteractor: ContactListInteractorInput {
+extension ListContactInteractor: ListContactInteractorInput {
     func findContacts(of name: String?) {
         let contact1 = ContactBalanceDeliverer(name: "Aldo", balance: -50.00)
         let contact2 = ContactBalanceDeliverer(name: "Blaise", balance: +40.00)

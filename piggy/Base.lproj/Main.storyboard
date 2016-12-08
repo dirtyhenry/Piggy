@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +26,7 @@
         <!--One-to-One-->
         <scene sceneID="vKd-B6-raL">
             <objects>
-                <tableViewController id="PAz-DU-ioh" customClass="ContactListTableViewController" customModule="piggy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="PAz-DU-ioh" customClass="ListContactTableViewController" customModule="piggy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UDj-x1-19s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,16 +62,89 @@
                             <outlet property="delegate" destination="PAz-DU-ioh" id="Q53-v8-50T"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="One-to-One" id="461-LX-Vxx"/>
+                    <navigationItem key="navigationItem" title="One-to-One" id="461-LX-Vxx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LN6-qZ-K9s">
+                            <connections>
+                                <action selector="addNewContact" destination="PAz-DU-ioh" id="agl-QO-nr4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ot-Q4-jc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="294" y="280"/>
         </scene>
         <!--Navigation Controller-->
+        <scene sceneID="HiE-aB-tgO">
+            <objects>
+                <navigationController storyboardIdentifier="AddContactNC" id="LvJ-xG-Dvs" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="DGy-na-B5J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="T8h-0z-vXf" kind="relationship" relationship="rootViewController" id="JrF-G7-5a2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UNb-AM-wV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658" y="1012"/>
+        </scene>
+        <!--Add new contact-->
+        <scene sceneID="3VK-7r-b2s">
+            <objects>
+                <viewController id="T8h-0z-vXf" customClass="AddContactViewController" customModule="piggy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nfa-vc-kK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="W5j-QY-sct"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Lk-kY-AiM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Marty McFly" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKN-AN-0r1">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JKN-AN-0r1" firstAttribute="trailing" secondItem="8Lk-kY-AiM" secondAttribute="trailingMargin" id="7Q9-s4-HY0"/>
+                            <constraint firstItem="JKN-AN-0r1" firstAttribute="leading" secondItem="8Lk-kY-AiM" secondAttribute="leadingMargin" id="NNK-8F-trl"/>
+                            <constraint firstItem="JKN-AN-0r1" firstAttribute="top" secondItem="nfa-vc-kK7" secondAttribute="bottom" constant="16" id="aUB-T4-Q5v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add new contact" id="KLa-Wh-3lN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="tud-rY-WzE">
+                            <connections>
+                                <action selector="didTapCancelButton" destination="T8h-0z-vXf" id="zjy-HH-FDm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Man-EK-wwG">
+                            <connections>
+                                <action selector="didTapSaveButton" destination="T8h-0z-vXf" id="uw1-H0-lIK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="tud-rY-WzE" id="aOo-0O-tRw"/>
+                        <outlet property="saveButton" destination="Man-EK-wwG" id="1Rd-M4-7oh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cg7-6u-wie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="1011.544227886057"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="m4b-gc-8i8">
             <objects>
-                <navigationController storyboardIdentifier="OneToOneListNC" id="2CV-YK-0cX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="OneToOneNC" id="2CV-YK-0cX" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EDj-iw-aVF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -82,7 +155,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90h-Ff-Zqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-658" y="280"/>
+            <point key="canvasLocation" x="-659" y="295"/>
         </scene>
     </scenes>
 </document>

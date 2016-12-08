@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		008932621DF8833B0047848B /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008932611DF8833B0047848B /* ContactListTableViewController.swift */; };
+		008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008932611DF8833B0047848B /* ListContactTableViewController.swift */; };
 		00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */; };
 		00DA1A341DF1E49F00969357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A321DF1E49F00969357 /* Main.storyboard */; };
 		00DA1A361DF1E49F00969357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A351DF1E49F00969357 /* Assets.xcassets */; };
@@ -16,11 +16,16 @@
 		00DA1A4F1DF1E49F00969357 /* piggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A4E1DF1E49F00969357 /* piggyUITests.swift */; };
 		00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */; };
 		00E06E0D1DF5CD7100D41382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00E06E0C1DF5CD7100D41382 /* GoogleService-Info.plist */; };
-		00E06E131DF5D54900D41382 /* ContactListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E121DF5D54900D41382 /* ContactListInteractor.swift */; };
+		00E06E131DF5D54900D41382 /* ListContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E121DF5D54900D41382 /* ListContactInteractor.swift */; };
 		00E06E151DF5D6CB00D41382 /* ContactEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E141DF5D6CB00D41382 /* ContactEntity.swift */; };
-		00E06E171DF5D7D900D41382 /* ContactListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E161DF5D7D900D41382 /* ContactListPresenter.swift */; };
-		00E06E191DF5DBC500D41382 /* ContactListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E181DF5DBC500D41382 /* ContactListModuleInterface.swift */; };
+		00E06E171DF5D7D900D41382 /* ListContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E161DF5D7D900D41382 /* ListContactPresenter.swift */; };
+		00E06E191DF5DBC500D41382 /* ListContactModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E181DF5DBC500D41382 /* ListContactModuleInterface.swift */; };
 		00E06E1B1DF5DFAD00D41382 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E1A1DF5DFAD00D41382 /* AppRoute.swift */; };
+		00F625901DF99DFA0013E3DA /* AddContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6258F1DF99DFA0013E3DA /* AddContactInteractor.swift */; };
+		00F625921DF99E130013E3DA /* AddContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F625911DF99E130013E3DA /* AddContactPresenter.swift */; };
+		00F625941DF99E230013E3DA /* AddContactModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F625931DF99E230013E3DA /* AddContactModuleInterface.swift */; };
+		00F625961DF9A20E0013E3DA /* ContactFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F625951DF9A20E0013E3DA /* ContactFirebaseManager.swift */; };
+		00F6259A1DF9AB050013E3DA /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F625991DF9AB050013E3DA /* AddContactViewController.swift */; };
 		18C556E3AC8EBB7E176BB380 /* Pods_piggy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1EDC89EE19CA0A057616F9 /* Pods_piggy.framework */; };
 		EB65D75ED36F75E4B4678D20 /* Pods_piggyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152F0000A245E9625D5BBCFC /* Pods_piggyTests.framework */; };
 		F90637D4BA09DB4871755065 /* Pods_piggyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD18210E771DBB4267B5FFAE /* Pods_piggyUITests.framework */; };
@@ -44,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008932611DF8833B0047848B /* ContactListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
+		008932611DF8833B0047848B /* ListContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactTableViewController.swift; sourceTree = "<group>"; };
 		00DA1A2B1DF1E49F00969357 /* piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00DA1A331DF1E49F00969357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,11 +64,16 @@
 		00DA1A501DF1E49F00969357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00DA1A601DF1EB9600969357 /* piggy-model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "piggy-model.xcdatamodel"; sourceTree = "<group>"; };
 		00E06E0C1DF5CD7100D41382 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		00E06E121DF5D54900D41382 /* ContactListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListInteractor.swift; sourceTree = "<group>"; };
+		00E06E121DF5D54900D41382 /* ListContactInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactInteractor.swift; sourceTree = "<group>"; };
 		00E06E141DF5D6CB00D41382 /* ContactEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactEntity.swift; path = Model/ContactEntity.swift; sourceTree = "<group>"; };
-		00E06E161DF5D7D900D41382 /* ContactListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListPresenter.swift; sourceTree = "<group>"; };
-		00E06E181DF5DBC500D41382 /* ContactListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListModuleInterface.swift; sourceTree = "<group>"; };
+		00E06E161DF5D7D900D41382 /* ListContactPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactPresenter.swift; sourceTree = "<group>"; };
+		00E06E181DF5DBC500D41382 /* ListContactModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactModuleInterface.swift; sourceTree = "<group>"; };
 		00E06E1A1DF5DFAD00D41382 /* AppRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		00F6258F1DF99DFA0013E3DA /* AddContactInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactInteractor.swift; sourceTree = "<group>"; };
+		00F625911DF99E130013E3DA /* AddContactPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactPresenter.swift; sourceTree = "<group>"; };
+		00F625931DF99E230013E3DA /* AddContactModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactModuleInterface.swift; sourceTree = "<group>"; };
+		00F625951DF9A20E0013E3DA /* ContactFirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactFirebaseManager.swift; path = Model/ContactFirebaseManager.swift; sourceTree = "<group>"; };
+		00F625991DF9AB050013E3DA /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		09B8A2AE22C499A6B9A3E9C3 /* Pods-piggyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-piggyUITests/Pods-piggyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		152F0000A245E9625D5BBCFC /* Pods_piggyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piggyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22690EBFD159D14600AFA6AE /* Pods-piggy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piggy/Pods-piggy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +174,7 @@
 			children = (
 				00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */,
 				00E06E141DF5D6CB00D41382 /* ContactEntity.swift */,
+				00F625951DF9A20E0013E3DA /* ContactFirebaseManager.swift */,
 			);
 			name = "Model layer";
 			sourceTree = "<group>";
@@ -179,26 +190,30 @@
 		00E06E101DF5D4E600D41382 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				00E06E111DF5D4EF00D41382 /* One-to-One List */,
+				00E06E111DF5D4EF00D41382 /* List One-to-One */,
 				00F6258E1DF99D9F0013E3DA /* Add Contact */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
 		};
-		00E06E111DF5D4EF00D41382 /* One-to-One List */ = {
+		00E06E111DF5D4EF00D41382 /* List One-to-One */ = {
 			isa = PBXGroup;
 			children = (
-				00E06E121DF5D54900D41382 /* ContactListInteractor.swift */,
-				008932611DF8833B0047848B /* ContactListTableViewController.swift */,
-				00E06E161DF5D7D900D41382 /* ContactListPresenter.swift */,
-				00E06E181DF5DBC500D41382 /* ContactListModuleInterface.swift */,
+				00E06E181DF5DBC500D41382 /* ListContactModuleInterface.swift */,
+				00E06E121DF5D54900D41382 /* ListContactInteractor.swift */,
+				00E06E161DF5D7D900D41382 /* ListContactPresenter.swift */,
+				008932611DF8833B0047848B /* ListContactTableViewController.swift */,
 			);
-			name = "One-to-One List";
+			name = "List One-to-One";
 			sourceTree = "<group>";
 		};
 		00F6258E1DF99D9F0013E3DA /* Add Contact */ = {
 			isa = PBXGroup;
 			children = (
+				00F625931DF99E230013E3DA /* AddContactModuleInterface.swift */,
+				00F6258F1DF99DFA0013E3DA /* AddContactInteractor.swift */,
+				00F625911DF99E130013E3DA /* AddContactPresenter.swift */,
+				00F625991DF9AB050013E3DA /* AddContactViewController.swift */,
 			);
 			name = "Add Contact";
 			sourceTree = "<group>";
@@ -508,14 +523,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F625941DF99E230013E3DA /* AddContactModuleInterface.swift in Sources */,
+				00F625901DF99DFA0013E3DA /* AddContactInteractor.swift in Sources */,
 				00E06E1B1DF5DFAD00D41382 /* AppRoute.swift in Sources */,
+				00F625961DF9A20E0013E3DA /* ContactFirebaseManager.swift in Sources */,
 				00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */,
-				00E06E131DF5D54900D41382 /* ContactListInteractor.swift in Sources */,
+				00F625921DF99E130013E3DA /* AddContactPresenter.swift in Sources */,
+				00E06E131DF5D54900D41382 /* ListContactInteractor.swift in Sources */,
 				00E06E151DF5D6CB00D41382 /* ContactEntity.swift in Sources */,
 				00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */,
-				00E06E191DF5DBC500D41382 /* ContactListModuleInterface.swift in Sources */,
-				008932621DF8833B0047848B /* ContactListTableViewController.swift in Sources */,
-				00E06E171DF5D7D900D41382 /* ContactListPresenter.swift in Sources */,
+				00E06E191DF5DBC500D41382 /* ListContactModuleInterface.swift in Sources */,
+				00F6259A1DF9AB050013E3DA /* AddContactViewController.swift in Sources */,
+				008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */,
+				00E06E171DF5D7D900D41382 /* ListContactPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

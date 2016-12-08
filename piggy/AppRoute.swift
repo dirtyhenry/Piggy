@@ -12,33 +12,46 @@ import FontAwesome_swift
 class AppRoute {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let tabBarController: UITabBarController
-    let oneToOneVC: UINavigationController
+    let oneToOneNC: UINavigationController
     
     
     init(window: UIWindow) {
         tabBarController = window.rootViewController as! UITabBarController
         
-        oneToOneVC = storyboard.instantiateViewController(withIdentifier: "OneToOneListNC") as! UINavigationController
+        oneToOneNC = storyboard.instantiateViewController(withIdentifier: "OneToOneNC") as! UINavigationController
         wireContactListComponents()
         
         let oneToOneTabImage = UIImage.fontAwesomeIcon(name: .users, textColor: UIColor.black, size: sizeForTabBarItem())
-        oneToOneVC.tabBarItem = UITabBarItem(title: "One-to-One",
+        oneToOneNC.tabBarItem = UITabBarItem(title: "One-to-One",
                                              image: oneToOneTabImage,
                                              tag: 1)
         
-        tabBarController.setViewControllers([oneToOneVC], animated: false)
+        tabBarController.setViewControllers([oneToOneNC], animated: false)
     }
     
     
     func wireContactListComponents() {
-        let contactListVC = oneToOneVC.viewControllers[0] as! ContactListTableViewController
-        let contactListPresenter = ContactListPresenter()
-        let contactListInteractor = ContactListInteractor()
+        let contactListVC = oneToOneNC.viewControllers[0] as! ListContactTableViewController
+        let contactListPresenter = ListContactPresenter()
+        let contactListInteractor = ListContactInteractor()
         
         contactListPresenter.interactor = contactListInteractor
         contactListPresenter.userInterface = contactListVC
         contactListInteractor.presenter = contactListPresenter
         contactListVC.eventHandler = contactListPresenter
+        contactListVC.didTapAddContact = showAddContact
+    }
+    
+    func showAddContact() {
+        let addContactNC = storyboard.instantiateViewController(withIdentifier: "AddContactNC") as! UINavigationController
+        let addContactVC = addContactNC.viewControllers[0] as! AddContactViewController
+        let addContactPresenter = AddContactPresenter()
+        let addContactInteractor = AddContactInteractor()
+        
+        addContactInteractor.presenter = addContactPresenter
+        addContactPresenter.interactor = addContactInteractor
+        addContactPresenter.userInterface = addContactVC
+        addContactVC.eventHandler = addContactPresenter
     }
     
     
