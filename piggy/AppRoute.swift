@@ -14,29 +14,40 @@ class AppRoute {
     let tabBarController: UITabBarController
     let oneToOneVC: UINavigationController
     
+    
     init(window: UIWindow) {
         tabBarController = window.rootViewController as! UITabBarController
         
         oneToOneVC = storyboard.instantiateViewController(withIdentifier: "OneToOneListNC") as! UINavigationController
-
-        // TODO: dimensions should depend on the type of screen
-        let oneToOneTabImage = UIImage.fontAwesomeIcon(name: .users, textColor: UIColor.black, size: CGSize(width: 30, height: 30))
+        wireContactListComponents()
+        
+        let oneToOneTabImage = UIImage.fontAwesomeIcon(name: .users, textColor: UIColor.black, size: sizeForTabBarItem())
         oneToOneVC.tabBarItem = UITabBarItem(title: "One-to-One",
-                                                               image: oneToOneTabImage,
-                                                               tag: 1)
-
+                                             image: oneToOneTabImage,
+                                             tag: 1)
+        
         tabBarController.setViewControllers([oneToOneVC], animated: false)
     }
-
-    func doShit() {
+    
+    
+    func wireContactListComponents() {
         let contactListVC = oneToOneVC.viewControllers[0] as! ContactListTableViewController
         let contactListPresenter = ContactListPresenter()
         let contactListInteractor = ContactListInteractor()
-
+        
         contactListPresenter.interactor = contactListInteractor
         contactListPresenter.userInterface = contactListVC
         contactListInteractor.presenter = contactListPresenter
-
         contactListVC.eventHandler = contactListPresenter
+    }
+    
+    
+    func heightOfTabBarItem() -> CGFloat {
+        return CGFloat(UIScreen.main.scale) * CGFloat(25.0);
+    }
+    
+    func sizeForTabBarItem() -> CGSize {
+        let dimension = heightOfTabBarItem()
+        return CGSize(width: dimension, height: dimension)
     }
 }

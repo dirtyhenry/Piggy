@@ -18,7 +18,7 @@ protocol ContactListInteractorInput {
 }
 
 protocol ContactListInteractorOutput {
-    func foundContacts(of name: String, contacts: [ContactBalanceDeliverer])
+    func foundContacts(of name: String?, contacts: [ContactBalanceDeliverer])
 }
 
 protocol ContactListViewInterface {

@@ -24,14 +24,18 @@ extension ContactListPresenter: ContactListModuleInterface {
 }
 
 extension ContactListPresenter: ContactListInteractorOutput {
-    func foundContacts(of name: String, contacts: [ContactBalanceDeliverer]) {
+    func foundContacts(of name: String?, contacts: [ContactBalanceDeliverer]) {
+        let positiveBalanceColor = UIColor(red: 0.0, green: 0.67, blue: 0.0, alpha: 1.0)
+        let negativeBalanceColor = UIColor.red
+        
         let viewModels = contacts.map { (contact) -> ContactBalanceViewModel in
             return ContactBalanceViewModel(name: contact.name,
                                            balance: String(contact.balance),
-                                           balanceColor: UIColor.red)
+                                           balanceColor: contact.balance >= 0.0 ? positiveBalanceColor : negativeBalanceColor)
         }
-
+        
+        let unwrappedName = name ?? "Me"
         userInterface?.showContacts(contacts: viewModels,
-                                    title: "One-to-Me")
+                                    title: "One-to-\(unwrappedName)")
     }
 }

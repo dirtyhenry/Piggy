@@ -19,6 +19,6 @@ extension ContactListInteractor: ContactListInteractorInput {
         let contact2 = ContactBalanceDeliverer(name: "Blaise", balance: +40.00)
         let contact3 = ContactBalanceDeliverer(name: "Coralie", balance: -5.00)
 
-        presenter?.foundContacts(of: "Me", contacts: [contact1, contact2, contact3])
+        presenter?.foundContacts(of: name, contacts: [contact1, contact2, contact3])
     }
 }
