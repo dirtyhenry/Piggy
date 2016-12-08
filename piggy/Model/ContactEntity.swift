@@ -8,9 +8,7 @@
 
 import UIKit
 
-protocol AddContactManager {
-    func addNewContact(_ contact: ContactEntity, completion: (Bool, NSError) -> ())
-}
+
 
 struct ContactEntity {
     let name: String

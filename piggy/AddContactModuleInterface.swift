@@ -30,3 +30,7 @@ protocol AddContactInteractorOutput {
 protocol AddContactViewInterface {
     func showErrorMessage(errorTitle: String, errorMessage: String?)
 }
+
+protocol AddContactDataManager {
+    func addNewContact(_ contact: ContactEntity, completion: (Bool, NSError) -> ())
+}

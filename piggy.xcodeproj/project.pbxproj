@@ -15,7 +15,6 @@
 		00DA1A441DF1E49F00969357 /* piggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A431DF1E49F00969357 /* piggyTests.swift */; };
 		00DA1A4F1DF1E49F00969357 /* piggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A4E1DF1E49F00969357 /* piggyUITests.swift */; };
 		00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */; };
-		00E06E0D1DF5CD7100D41382 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00E06E0C1DF5CD7100D41382 /* GoogleService-Info.plist */; };
 		00E06E131DF5D54900D41382 /* ListContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E121DF5D54900D41382 /* ListContactInteractor.swift */; };
 		00E06E151DF5D6CB00D41382 /* ContactEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E141DF5D6CB00D41382 /* ContactEntity.swift */; };
 		00E06E171DF5D7D900D41382 /* ListContactPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E06E161DF5D7D900D41382 /* ListContactPresenter.swift */; };
@@ -26,6 +25,8 @@
 		00F625941DF99E230013E3DA /* AddContactModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F625931DF99E230013E3DA /* AddContactModuleInterface.swift */; };
 		00F625961DF9A20E0013E3DA /* ContactFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F625951DF9A20E0013E3DA /* ContactFirebaseManager.swift */; };
 		00F6259A1DF9AB050013E3DA /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F625991DF9AB050013E3DA /* AddContactViewController.swift */; };
+		00F6259C1DF9C02E0013E3DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00F6259B1DF9C02E0013E3DA /* GoogleService-Info.plist */; };
+		00F6259F1DF9C0A80013E3DA /* AppDelegate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6259E1DF9C0A80013E3DA /* AppDelegate+Firebase.swift */; };
 		18C556E3AC8EBB7E176BB380 /* Pods_piggy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1EDC89EE19CA0A057616F9 /* Pods_piggy.framework */; };
 		EB65D75ED36F75E4B4678D20 /* Pods_piggyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152F0000A245E9625D5BBCFC /* Pods_piggyTests.framework */; };
 		F90637D4BA09DB4871755065 /* Pods_piggyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD18210E771DBB4267B5FFAE /* Pods_piggyUITests.framework */; };
@@ -63,7 +64,6 @@
 		00DA1A4E1DF1E49F00969357 /* piggyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piggyUITests.swift; sourceTree = "<group>"; };
 		00DA1A501DF1E49F00969357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00DA1A601DF1EB9600969357 /* piggy-model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "piggy-model.xcdatamodel"; sourceTree = "<group>"; };
-		00E06E0C1DF5CD7100D41382 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00E06E121DF5D54900D41382 /* ListContactInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactInteractor.swift; sourceTree = "<group>"; };
 		00E06E141DF5D6CB00D41382 /* ContactEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactEntity.swift; path = Model/ContactEntity.swift; sourceTree = "<group>"; };
 		00E06E161DF5D7D900D41382 /* ListContactPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactPresenter.swift; sourceTree = "<group>"; };
@@ -74,6 +74,8 @@
 		00F625931DF99E230013E3DA /* AddContactModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactModuleInterface.swift; sourceTree = "<group>"; };
 		00F625951DF9A20E0013E3DA /* ContactFirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactFirebaseManager.swift; path = Model/ContactFirebaseManager.swift; sourceTree = "<group>"; };
 		00F625991DF9AB050013E3DA /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		00F6259B1DF9C02E0013E3DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		00F6259E1DF9C0A80013E3DA /* AppDelegate+Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Firebase.swift"; sourceTree = "<group>"; };
 		09B8A2AE22C499A6B9A3E9C3 /* Pods-piggyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-piggyUITests/Pods-piggyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		152F0000A245E9625D5BBCFC /* Pods_piggyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piggyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22690EBFD159D14600AFA6AE /* Pods-piggy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piggy/Pods-piggy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,15 +140,16 @@
 		00DA1A2D1DF1E49F00969357 /* piggy */ = {
 			isa = PBXGroup;
 			children = (
+				00F6259D1DF9C0410013E3DA /* Resources */,
 				00E06E0F1DF5D4DB00D41382 /* Classes */,
 				00DA1A5E1DF1EB7100969357 /* Model layer */,
 				00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */,
+				00F6259E1DF9C0A80013E3DA /* AppDelegate+Firebase.swift */,
 				00E06E1A1DF5DFAD00D41382 /* AppRoute.swift */,
 				00DA1A321DF1E49F00969357 /* Main.storyboard */,
 				00DA1A351DF1E49F00969357 /* Assets.xcassets */,
 				00DA1A371DF1E49F00969357 /* LaunchScreen.storyboard */,
 				00DA1A3A1DF1E49F00969357 /* Info.plist */,
-				00E06E0C1DF5CD7100D41382 /* GoogleService-Info.plist */,
 			);
 			path = piggy;
 			sourceTree = "<group>";
@@ -216,6 +219,14 @@
 				00F625991DF9AB050013E3DA /* AddContactViewController.swift */,
 			);
 			name = "Add Contact";
+			sourceTree = "<group>";
+		};
+		00F6259D1DF9C0410013E3DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00F6259B1DF9C02E0013E3DA /* GoogleService-Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D563CCC5D45995F268C78D28 /* Frameworks */ = {
@@ -358,7 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00DA1A391DF1E49F00969357 /* LaunchScreen.storyboard in Resources */,
-				00E06E0D1DF5CD7100D41382 /* GoogleService-Info.plist in Resources */,
+				00F6259C1DF9C02E0013E3DA /* GoogleService-Info.plist in Resources */,
 				00DA1A361DF1E49F00969357 /* Assets.xcassets in Resources */,
 				00DA1A341DF1E49F00969357 /* Main.storyboard in Resources */,
 			);
@@ -530,6 +541,7 @@
 				00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */,
 				00F625921DF99E130013E3DA /* AddContactPresenter.swift in Sources */,
 				00E06E131DF5D54900D41382 /* ListContactInteractor.swift in Sources */,
+				00F6259F1DF9C0A80013E3DA /* AppDelegate+Firebase.swift in Sources */,
 				00E06E151DF5D6CB00D41382 /* ContactEntity.swift in Sources */,
 				00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */,
 				00E06E191DF5DBC500D41382 /* ListContactModuleInterface.swift in Sources */,

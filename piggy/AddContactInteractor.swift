@@ -9,7 +9,7 @@
 import UIKit
 
 class AddContactInteractor: NSObject {
-    var addContactManager: AddContactManager?
+    var addContactManager: AddContactDataManager?
     var presenter: AddContactInteractorOutput?
 }
 

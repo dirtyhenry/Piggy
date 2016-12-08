@@ -7,6 +7,7 @@ target 'piggy' do
 
   # Pods for piggy
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
   pod 'FontAwesome.swift'
 
   target 'piggyTests' do

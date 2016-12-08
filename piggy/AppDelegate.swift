@@ -15,9 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var appRoute: AppRoute?
-    
+    let firebase = AppDelegateFirebase()
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        //FIRApp.configure()
+        firebase.configure()
 
         if let window = window {
             appRoute = AppRoute(window: window)

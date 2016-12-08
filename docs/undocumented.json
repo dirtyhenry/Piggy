@@ -1,0 +1,180 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Contact+CoreDataClass.swift",
+      "line": null,
+      "symbol": "Contact",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Contact+CoreDataClass.swift",
+      "line": 14,
+      "symbol": "Contact",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Contact+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "Contact.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Contact+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "Contact.me",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Contact+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "Contact.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Contact+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "Contact.benefitedExpenses",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Contact+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "Contact.events",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Contact+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "Contact.payedExpenses",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Event+CoreDataClass.swift",
+      "line": null,
+      "symbol": "Event",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Event+CoreDataClass.swift",
+      "line": 14,
+      "symbol": "Event",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Event+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "Event.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Event+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "Event.creationDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Event+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "Event.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Event+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "Event.contacts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Event+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "Event.expenses",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataClass.swift",
+      "line": null,
+      "symbol": "Expense",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataClass.swift",
+      "line": 14,
+      "symbol": "Expense",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataProperties.swift",
+      "line": 16,
+      "symbol": "Expense.fetchRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataProperties.swift",
+      "line": 20,
+      "symbol": "Expense.amount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataProperties.swift",
+      "line": 21,
+      "symbol": "Expense.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataProperties.swift",
+      "line": 22,
+      "symbol": "Expense.payback",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataProperties.swift",
+      "line": 23,
+      "symbol": "Expense.quickDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataProperties.swift",
+      "line": 24,
+      "symbol": "Expense.beneficitingContacts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataProperties.swift",
+      "line": 25,
+      "symbol": "Expense.event",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mick/Developer/Projects/Piggy/Code/piggy/build/piggy.build/Release-iphoneos/piggy.build/DerivedSources/CoreDataGenerated/piggy-model/Expense+CoreDataProperties.swift",
+      "line": 26,
+      "symbol": "Expense.payingContacts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/mick/Developer/Projects/Piggy/Code/piggy"
+}
