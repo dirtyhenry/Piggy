@@ -6,6 +6,9 @@ target 'piggy' do
   use_frameworks!
 
   # Pods for piggy
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'FontAwesome.swift'
 
   target 'piggyTests' do
     inherit! :search_paths

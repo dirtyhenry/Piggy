@@ -1,0 +1,11 @@
+{
+  "users": {
+    "dirtyhenry": {
+      "contacts": {
+        "abraham": true,
+        "barack": true,
+        "chester": true
+      }
+    }
+  }
+}
