@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 source "https://rubygems.org"
 
-gem "cocoapods"
-gem "jazzy"
+gem 'cocoapods'
+gem 'jazzy'
+gem 'fastlane'
+gem 'match'

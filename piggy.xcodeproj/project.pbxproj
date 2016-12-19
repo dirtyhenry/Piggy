@@ -330,7 +330,7 @@
 					00DA1A2A1DF1E49F00969357 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7HX93AP7WL;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					00DA1A3E1DF1E49F00969357 = {
 						CreatedOnToolsVersion = 8.1;
@@ -704,12 +704,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mickaël Floc'hlay (7HHF46B2T5)";
 				DEVELOPMENT_TEAM = 7HX93AP7WL;
 				INFOPLIST_FILE = piggy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bootstragram.piggy.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mickaelflochlay.piggies.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c8e1c13-3c84-4181-a69b-53e6db0ebe75";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.mickaelflochlay.piggies.dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -720,11 +723,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 7HX93AP7WL;
 				INFOPLIST_FILE = piggy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bootstragram.piggy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mickaelflochlay.piggies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

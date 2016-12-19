@@ -9,6 +9,11 @@ An open-source iOS application to manage tiny debts between friends.
 * ruby 2.2.5p319 (2016-04-26 revision 54774) [x86_64-darwin16]
 * Bundler version 1.13.6
 
+### Certificate Management
+
+    bundle exec fastlane produce -u user@example.com -a mybundle.dev --skip_itc
+    bundle exec fastlane match development -a mybundle.dev
+
 ### Instructions
 
     bundle install
