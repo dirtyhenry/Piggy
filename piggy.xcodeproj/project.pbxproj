@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0010A84C1E084A4900A1EAB1 /* SignInModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010A84B1E084A4900A1EAB1 /* SignInModuleInterface.swift */; };
+		0010A84E1E084A5700A1EAB1 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010A84D1E084A5700A1EAB1 /* SignInInteractor.swift */; };
+		0010A8501E084A6100A1EAB1 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010A84F1E084A6100A1EAB1 /* SignInPresenter.swift */; };
+		0010A8521E084A7600A1EAB1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010A8511E084A7600A1EAB1 /* SignInViewController.swift */; };
+		0010A8541E084A9C00A1EAB1 /* AuthenticationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010A8531E084A9C00A1EAB1 /* AuthenticationRoute.swift */; };
+		0010A8561E084AFB00A1EAB1 /* AuthenticationFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010A8551E084AFB00A1EAB1 /* AuthenticationFirebaseManager.swift */; };
 		008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008932611DF8833B0047848B /* ListContactTableViewController.swift */; };
 		00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */; };
 		00DA1A341DF1E49F00969357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A321DF1E49F00969357 /* Main.storyboard */; };
@@ -50,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0010A84B1E084A4900A1EAB1 /* SignInModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInModuleInterface.swift; sourceTree = "<group>"; };
+		0010A84D1E084A5700A1EAB1 /* SignInInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		0010A84F1E084A6100A1EAB1 /* SignInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		0010A8511E084A7600A1EAB1 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0010A8531E084A9C00A1EAB1 /* AuthenticationRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRoute.swift; sourceTree = "<group>"; };
+		0010A8551E084AFB00A1EAB1 /* AuthenticationFirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseManager.swift; sourceTree = "<group>"; };
 		008932611DF8833B0047848B /* ListContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactTableViewController.swift; sourceTree = "<group>"; };
 		00DA1A2B1DF1E49F00969357 /* piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +127,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0010A8491E084A0800A1EAB1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0010A8531E084A9C00A1EAB1 /* AuthenticationRoute.swift */,
+				0010A84A1E084A2000A1EAB1 /* Signing in */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		0010A84A1E084A2000A1EAB1 /* Signing in */ = {
+			isa = PBXGroup;
+			children = (
+				0010A84B1E084A4900A1EAB1 /* SignInModuleInterface.swift */,
+				0010A84D1E084A5700A1EAB1 /* SignInInteractor.swift */,
+				0010A84F1E084A6100A1EAB1 /* SignInPresenter.swift */,
+				0010A8511E084A7600A1EAB1 /* SignInViewController.swift */,
+			);
+			name = "Signing in";
+			sourceTree = "<group>";
+		};
 		00DA1A221DF1E49F00969357 = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +174,7 @@
 			children = (
 				00F6259D1DF9C0410013E3DA /* Resources */,
 				00E06E0F1DF5D4DB00D41382 /* Classes */,
-				00DA1A5E1DF1EB7100969357 /* Model layer */,
+				00DA1A5E1DF1EB7100969357 /* Data & Stores */,
 				00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */,
 				00F6259E1DF9C0A80013E3DA /* AppDelegate+Firebase.swift */,
 				00E06E1A1DF5DFAD00D41382 /* AppRoute.swift */,
@@ -172,14 +204,15 @@
 			path = piggyUITests;
 			sourceTree = "<group>";
 		};
-		00DA1A5E1DF1EB7100969357 /* Model layer */ = {
+		00DA1A5E1DF1EB7100969357 /* Data & Stores */ = {
 			isa = PBXGroup;
 			children = (
 				00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */,
 				00E06E141DF5D6CB00D41382 /* ContactEntity.swift */,
 				00F625951DF9A20E0013E3DA /* ContactFirebaseManager.swift */,
+				0010A8551E084AFB00A1EAB1 /* AuthenticationFirebaseManager.swift */,
 			);
-			name = "Model layer";
+			name = "Data & Stores";
 			sourceTree = "<group>";
 		};
 		00E06E0F1DF5D4DB00D41382 /* Classes */ = {
@@ -193,6 +226,7 @@
 		00E06E101DF5D4E600D41382 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0010A8491E084A0800A1EAB1 /* Authentication */,
 				00E06E111DF5D4EF00D41382 /* List One-to-One */,
 				00F6258E1DF99D9F0013E3DA /* Add Contact */,
 			);
@@ -537,17 +571,23 @@
 			files = (
 				00F625941DF99E230013E3DA /* AddContactModuleInterface.swift in Sources */,
 				00F625901DF99DFA0013E3DA /* AddContactInteractor.swift in Sources */,
+				0010A84C1E084A4900A1EAB1 /* SignInModuleInterface.swift in Sources */,
 				00E06E1B1DF5DFAD00D41382 /* AppRoute.swift in Sources */,
+				0010A84E1E084A5700A1EAB1 /* SignInInteractor.swift in Sources */,
 				00F625961DF9A20E0013E3DA /* ContactFirebaseManager.swift in Sources */,
 				00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */,
 				00F625921DF99E130013E3DA /* AddContactPresenter.swift in Sources */,
+				0010A8501E084A6100A1EAB1 /* SignInPresenter.swift in Sources */,
 				00E06E131DF5D54900D41382 /* ListContactInteractor.swift in Sources */,
 				00F6259F1DF9C0A80013E3DA /* AppDelegate+Firebase.swift in Sources */,
+				0010A8541E084A9C00A1EAB1 /* AuthenticationRoute.swift in Sources */,
 				00E06E151DF5D6CB00D41382 /* ContactEntity.swift in Sources */,
 				00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */,
 				00E06E191DF5DBC500D41382 /* ListContactModuleInterface.swift in Sources */,
+				0010A8521E084A7600A1EAB1 /* SignInViewController.swift in Sources */,
 				00F6259A1DF9AB050013E3DA /* AddContactViewController.swift in Sources */,
 				008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */,
+				0010A8561E084AFB00A1EAB1 /* AuthenticationFirebaseManager.swift in Sources */,
 				00E06E171DF5D7D900D41382 /* ListContactPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

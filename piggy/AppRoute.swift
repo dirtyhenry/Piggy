@@ -13,12 +13,15 @@ class AppRoute {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let tabBarController: UITabBarController
     let oneToOneNC: UINavigationController
+    let authenticationRoute: AuthenticationRoute
     
     
     init(window: UIWindow) {
         tabBarController = window.rootViewController as! UITabBarController
         
         oneToOneNC = storyboard.instantiateViewController(withIdentifier: "OneToOneNC") as! UINavigationController
+        authenticationRoute = AuthenticationRoute()
+
         wireContactListComponents()
         
         let oneToOneTabImage = UIImage.fontAwesomeIcon(name: .users, textColor: UIColor.black, size: sizeForTabBarItem())
@@ -26,7 +29,13 @@ class AppRoute {
                                              image: oneToOneTabImage,
                                              tag: 1)
         
-        tabBarController.setViewControllers([oneToOneNC], animated: false)
+        let authenticationNC = authenticationRoute.authenticationNC
+        let authenticationTabImage = UIImage.fontAwesomeIcon(name: .user, textColor: .black, size: sizeForTabBarItem())
+        authenticationNC.tabBarItem = UITabBarItem(title: "Profile",
+                                                   image: authenticationTabImage,
+                                                   tag: 2)
+        
+        tabBarController.setViewControllers([oneToOneNC, authenticationNC], animated: false)
     }
     
     
@@ -62,7 +71,7 @@ class AppRoute {
     
     
     func heightOfTabBarItem() -> CGFloat {
-        return CGFloat(UIScreen.main.scale) * CGFloat(25.0);
+        return CGFloat(25.0);
     }
     
     func sizeForTabBarItem() -> CGSize {

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gVb-1Z-NCe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gVb-1Z-NCe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,7 +80,7 @@
                 <navigationController storyboardIdentifier="AddContactNC" id="LvJ-xG-Dvs" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="DGy-na-B5J">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DGy-na-B5J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -139,12 +139,84 @@
             <point key="canvasLocation" x="293.60000000000002" y="1011.544227886057"/>
         </scene>
         <!--Navigation Controller-->
+        <scene sceneID="vkw-JR-9gb">
+            <objects>
+                <navigationController storyboardIdentifier="AuthenticationNC" id="Uot-H8-KV2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pbO-wd-0Et">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XsJ-jU-5ha" kind="relationship" relationship="rootViewController" id="x8a-QI-fS6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9j-9z-H2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655" y="1710"/>
+        </scene>
+        <!--Sign In-->
+        <scene sceneID="Ni7-Mk-3l3">
+            <objects>
+                <viewController id="XsJ-jU-5ha" customClass="SignInViewController" customModule="piggy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6XH-ia-P0U"/>
+                        <viewControllerLayoutGuide type="bottom" id="d2i-TP-F50"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IEi-r2-bwk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96D-wo-xUd">
+                                <rect key="frame" x="16" y="80" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIh-N4-bMb">
+                                <rect key="frame" x="16" y="126" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="96D-wo-xUd" secondAttribute="trailing" constant="16" id="1Iw-k6-etT"/>
+                            <constraint firstItem="96D-wo-xUd" firstAttribute="top" secondItem="6XH-ia-P0U" secondAttribute="bottom" constant="16" id="F4p-5w-lpa"/>
+                            <constraint firstAttribute="trailing" secondItem="yIh-N4-bMb" secondAttribute="trailing" constant="16" id="Vto-fH-LPN"/>
+                            <constraint firstItem="yIh-N4-bMb" firstAttribute="top" secondItem="96D-wo-xUd" secondAttribute="bottom" constant="16" id="nls-hx-PIR"/>
+                            <constraint firstItem="96D-wo-xUd" firstAttribute="leading" secondItem="IEi-r2-bwk" secondAttribute="leading" constant="16" id="zrM-Ts-Uy5"/>
+                            <constraint firstItem="yIh-N4-bMb" firstAttribute="leading" secondItem="IEi-r2-bwk" secondAttribute="leading" constant="16" id="zuL-sx-Zac"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign In" id="NS9-8B-XeA">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="5cn-bO-qoh">
+                            <connections>
+                                <action selector="didTapCancelButton" destination="XsJ-jU-5ha" id="ws9-Fz-tEq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="QAv-rq-2Sn">
+                            <connections>
+                                <action selector="didTapSaveButton" destination="XsJ-jU-5ha" id="nEr-uu-wJl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="passwordTextField" destination="yIh-N4-bMb" id="g8i-sO-RVg"/>
+                        <outlet property="usernameTextField" destination="96D-wo-xUd" id="16e-Wh-w06"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUD-LC-MqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="1710"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="m4b-gc-8i8">
             <objects>
                 <navigationController storyboardIdentifier="OneToOneNC" id="2CV-YK-0cX" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EDj-iw-aVF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EDj-iw-aVF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

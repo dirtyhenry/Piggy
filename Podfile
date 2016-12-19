@@ -6,8 +6,13 @@ target 'piggy' do
   use_frameworks!
 
   # Pods for piggy
+
+  # Firebase Dependencies
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+
+  # FontAwesome for cheap gorgeous icons
   pod 'FontAwesome.swift'
 
   target 'piggyTests' do
