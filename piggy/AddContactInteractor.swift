@@ -16,11 +16,11 @@ class AddContactInteractor: NSObject {
 extension AddContactInteractor: AddContactInteractorInput {
     func saveNewContact(name: String) {
         let newContactEntity = ContactEntity(name: name, isRoot: false)
-        addContactManager?.addNewContact(newContactEntity, completion: { (success, error) in
-            if success {
-                presenter?.savedNewContact(name: name)
-            } else {
+        addContactManager?.addNewContact(newContactEntity, completion: { (error) in
+            if let error = error {
                 presenter?.failedSavingNewContact(name: name, error: error)
+            } else {
+                presenter?.savedNewContact(name: name)
             }
         })
     }

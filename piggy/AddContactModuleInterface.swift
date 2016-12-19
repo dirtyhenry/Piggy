@@ -32,5 +32,5 @@ protocol AddContactViewInterface {
 }
 
 protocol AddContactDataManager {
-    func addNewContact(_ contact: ContactEntity, completion: (Bool, NSError) -> ())
+    func addNewContact(_ contact: ContactEntity, completion: (NSError?) -> ())
 }

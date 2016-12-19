@@ -47,8 +47,10 @@ class AppRoute {
         let addContactVC = addContactNC.viewControllers[0] as! AddContactViewController
         let addContactPresenter = AddContactPresenter()
         let addContactInteractor = AddContactInteractor()
+        let addContactDataManager = ContactFirebaseManager()
         
         addContactInteractor.presenter = addContactPresenter
+        addContactInteractor.addContactManager = addContactDataManager
         addContactPresenter.interactor = addContactInteractor
         addContactPresenter.userInterface = addContactVC
         addContactPresenter.delegate = self
