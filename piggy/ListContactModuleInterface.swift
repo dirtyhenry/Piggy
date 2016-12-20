@@ -26,3 +26,7 @@ protocol ListContactViewInterface {
     func showContacts(contacts: [ContactBalanceViewModel], title: String)
     func addNewContact()
 }
+
+protocol ListContactDataManager {
+    func fetchAllContacts(except: String?) -> [Contact]
+}

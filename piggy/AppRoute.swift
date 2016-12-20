@@ -13,7 +13,11 @@ class AppRoute {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let tabBarController: UITabBarController
     let oneToOneNC: UINavigationController
-    
+    let coreDataStack = CoreDataCoordinator(modelName: "piggy-model")
+
+    // FIXME: this shouldn't be here
+    var contactListPresenter: ListContactPresenter?
+
     
     init(window: UIWindow) {
         tabBarController = window.rootViewController as! UITabBarController
@@ -32,12 +36,15 @@ class AppRoute {
     
     func wireContactListComponents() {
         let contactListVC = oneToOneNC.viewControllers[0] as! ListContactTableViewController
-        let contactListPresenter = ListContactPresenter()
+        self.contactListPresenter = ListContactPresenter()
         let contactListInteractor = ListContactInteractor()
+
+        let contactDataManager = ContactCoreDataManager(stack: coreDataStack)
         
-        contactListPresenter.interactor = contactListInteractor
-        contactListPresenter.userInterface = contactListVC
+        contactListPresenter?.interactor = contactListInteractor
+        contactListPresenter?.userInterface = contactListVC
         contactListInteractor.presenter = contactListPresenter
+        contactListInteractor.dataManager = contactDataManager
         contactListVC.eventHandler = contactListPresenter
         contactListVC.didTapAddContact = showAddContact
     }
@@ -47,8 +54,10 @@ class AppRoute {
         let addContactVC = addContactNC.viewControllers[0] as! AddContactViewController
         let addContactPresenter = AddContactPresenter()
         let addContactInteractor = AddContactInteractor()
-        
+        let contactDataManager = ContactCoreDataManager(stack: coreDataStack)
+
         addContactInteractor.presenter = addContactPresenter
+        addContactInteractor.addContactManager = contactDataManager
         addContactPresenter.interactor = addContactInteractor
         addContactPresenter.userInterface = addContactVC
         addContactPresenter.delegate = self
@@ -76,5 +85,6 @@ extension AppRoute: AddContactModuleDelegate {
 
     func didSaveAddContactAction() {
         tabBarController.dismiss(animated: true, completion: nil)
+        contactListPresenter?.updateView(referenceContactName: nil)
     }
 }

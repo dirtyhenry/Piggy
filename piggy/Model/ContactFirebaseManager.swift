@@ -14,7 +14,7 @@ class ContactFirebaseManager: NSObject {
 }
 
 extension ContactFirebaseManager: AddContactDataManager {
-    func addNewContact(_ contact: ContactEntity, completion: (Bool, NSError) -> ()) {
+    func addNewContact(_ contact: ContactEntity, completion: (Bool, NSError?) -> ()) {
         ref.child("users").child("dirtyhenry").child("contacts").setValue(["username": contact.name])
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Contact" representedClassName="Contact" syncable="YES" codeGenerationType="class">
         <attribute name="me" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="benefitedExpenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="beneficitingContacts" inverseEntity="Expense" syncable="YES"/>
         <relationship name="events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="contacts" inverseEntity="Event" syncable="YES"/>
         <relationship name="payedExpenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="payingContacts" inverseEntity="Expense" syncable="YES"/>
@@ -24,7 +24,7 @@
     </entity>
     <elements>
         <element name="Contact" positionX="-63" positionY="-18" width="128" height="120"/>
-        <element name="Expense" positionX="-54" positionY="-9" width="128" height="150"/>
         <element name="Event" positionX="-36" positionY="9" width="128" height="105"/>
+        <element name="Expense" positionX="-54" positionY="-9" width="128" height="150"/>
     </elements>
 </model>
