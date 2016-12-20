@@ -10,11 +10,20 @@ import UIKit
 //import Firebase
 
 
+/// The delegate for the app.
+///
+/// One objective is to leave it as lean as possible.
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    /// The UIWindow for the app.
     var window: UIWindow?
+
+    /// The app route, wiring all view controllers of the app.
     var appRoute: AppRoute?
+
+    /// The object managing all low-level Firebase configuration. 
+    /// If we want to get rid of Firebase, it should be made easy: just remove this guy.
     let firebase = AppDelegateFirebase()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

@@ -3,8 +3,9 @@ sdk: iphone
 swift_version: 3.0.2
 author: Bootstragram
 author_url: https://bootstragram.com
-module: piggy
-module_version: 2.0.0
+#module: Piggy
+#module_version: 2.0.0
 copyright: "2009-present © Bootstragram. See LICENSE for more details."
 github_url: https://github.com/Bootstragram/piggy/
 xcodebuild_arguments: [clean,build,-workspace,piggy.xcworkspace,-scheme,piggy]
+min_acl: private

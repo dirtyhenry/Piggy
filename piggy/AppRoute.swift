@@ -9,16 +9,18 @@
 import UIKit
 import FontAwesome_swift
 
+/// The root level routing object for the application.
+/// This component manages the `UITabBarController` at the root level of our window.
 class AppRoute {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let tabBarController: UITabBarController
+    // FIXME: move to a One-To-One dedicated route
     let oneToOneNC: UINavigationController
     let coreDataStack = CoreDataCoordinator(modelName: "piggy-model")
 
     // FIXME: this shouldn't be here
     var contactListPresenter: ListContactPresenter?
 
-    
     init(window: UIWindow) {
         tabBarController = window.rootViewController as! UITabBarController
         
