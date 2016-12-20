@@ -34,10 +34,11 @@ class AuthenticationRoute {
 
 extension AuthenticationRoute: SignInModuleDelegate {
     func didCancelSignInAction() {
-        //...
+        // TODO: So far, the screen is root of the tab bar. 
+        // So it's not really possible to cancel the action.
     }
 
     func didSignInAction() {
-        
+        // TODO: Manage some sort of a account profile here.
     }
 }
