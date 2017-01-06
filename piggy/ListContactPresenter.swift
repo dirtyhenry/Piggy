@@ -11,15 +11,24 @@ import UIKit
 class ListContactPresenter: NSObject {
     var interactor: ListContactInteractorInput?
     var userInterface: ListContactViewInterface?
+    var router: ListContactRouterInput?
 }
 
 extension ListContactPresenter: ListContactModuleInterface {
+    internal func didTapCreateExpense() {
+        router?.presentCreateExpenseInterface()
+    }
+
     func addNewContact() {
         //contactListWireframe.presentAddContactInterface()
     }
 
     func updateView(referenceContactName: String?) {
         interactor?.findContacts(of: referenceContactName)
+    }
+
+    func addNewExpense() {
+        // Do stuff
     }
 }
 

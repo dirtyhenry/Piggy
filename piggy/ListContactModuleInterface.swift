@@ -14,10 +14,18 @@ protocol ListContactModuleInterface {
     /// Add new contact
     func addNewContact()
 
+    func addNewExpense()
+
     /// Update the view.
     ///
     /// - Parameter referenceContactName: the reference contact name or `nil` to use the root contact
     func updateView(referenceContactName: String?)
+
+    func didTapCreateExpense()
+}
+
+protocol ListContactRouterInput {
+    func presentCreateExpenseInterface()
 }
 
 

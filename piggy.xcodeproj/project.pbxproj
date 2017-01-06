@@ -10,6 +10,8 @@
 		0024791E1E0991DE00708539 /* ContactCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0024791D1E0991DE00708539 /* ContactCoreDataManager.swift */; };
 		0024795D1E0993D400708539 /* CoreDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0024795C1E0993D400708539 /* CoreDataCoordinator.swift */; };
 		008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008932611DF8833B0047848B /* ListContactTableViewController.swift */; };
+		00D913511E1FEBCE00F7151C /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D913501E1FEBCE00F7151C /* TextFieldTableViewCell.swift */; };
+		00D913551E1FF63000F7151C /* SectionHeaderWithActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D913541E1FF63000F7151C /* SectionHeaderWithActionViewController.swift */; };
 		00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */; };
 		00DA1A341DF1E49F00969357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A321DF1E49F00969357 /* Main.storyboard */; };
 		00DA1A361DF1E49F00969357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A351DF1E49F00969357 /* Assets.xcassets */; };
@@ -29,9 +31,26 @@
 		00F6259A1DF9AB050013E3DA /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F625991DF9AB050013E3DA /* AddContactViewController.swift */; };
 		00F6259C1DF9C02E0013E3DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00F6259B1DF9C02E0013E3DA /* GoogleService-Info.plist */; };
 		00F6259F1DF9C0A80013E3DA /* AppDelegate+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6259E1DF9C0A80013E3DA /* AppDelegate+Firebase.swift */; };
+		037E0B2E742C0C41A4408DA4 /* CreateExpensePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69E958D936408D34BDF7C6B /* CreateExpensePresenter.swift */; };
+		0A5A44BA8086C08B7E093A72 /* CreateExpenseInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896794AEFDFC3A45AF9EF8B2 /* CreateExpenseInteractorOutput.swift */; };
+		0E17628D732DB70947DE921B /* CreateExpenseModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8696F83289410686071BB37 /* CreateExpenseModuleInput.swift */; };
 		18C556E3AC8EBB7E176BB380 /* Pods_piggy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1EDC89EE19CA0A057616F9 /* Pods_piggy.framework */; };
+		1AF6CCF027C15B656BA5BF92 /* CreateExpenseRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF3624B24647B8FD8D467B /* CreateExpenseRouterTests.swift */; };
+		2B413EA05F5005B9FADEC094 /* CreateExpenseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F23A330A029CD38A0B7F18F /* CreateExpenseConfigurator.swift */; };
+		3986C403EF94468AF962601F /* CreateExpenseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2ED47A618332A54CEA354F /* CreateExpenseRouter.swift */; };
+		451ACE49A37F1433F0020B91 /* CreateExpenseViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE608227BCAE820553F29C3 /* CreateExpenseViewTests.swift */; };
+		54656A7DEF6831E1383C14D1 /* CreateExpenseInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3321D31C59A3F044EF5547CD /* CreateExpenseInitializer.swift */; };
+		63069F620AD4B349B8800BF1 /* CreateExpenseInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC3E0829D7F24FFF1D71FF /* CreateExpenseInteractorTests.swift */; };
+		7E6CE5A70A250E37231F1846 /* CreateExpenseConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F4C70C72860DBDB52EF5F1 /* CreateExpenseConfiguratorTests.swift */; };
+		7F2C0CD1ABAFA73B333FF3DB /* CreateExpenseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6AE7328C49368F5E293904 /* CreateExpenseViewInput.swift */; };
+		8B81F955E00E772DE8DD5C8C /* CreateExpenseRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1D05ACF8A88B851A86B22B /* CreateExpenseRouterInput.swift */; };
+		8E80CCC81CA67392BDB5C1D4 /* CreateExpensePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298EDCC8B40D9BF931263CF4 /* CreateExpensePresenterTests.swift */; };
+		A7210778D860750211FE5A7D /* CreateExpenseViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227B76035F36059E781DFC12 /* CreateExpenseViewOutput.swift */; };
+		C31F601013CB9B92897A43A8 /* CreateExpenseInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A56264A519632FCDC2DCE8 /* CreateExpenseInteractorInput.swift */; };
+		DBB8C479E60E5C355C130C6C /* CreateExpenseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD94ADC109ED473CF4D74B5 /* CreateExpenseInteractor.swift */; };
 		EB65D75ED36F75E4B4678D20 /* Pods_piggyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152F0000A245E9625D5BBCFC /* Pods_piggyTests.framework */; };
 		F90637D4BA09DB4871755065 /* Pods_piggyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD18210E771DBB4267B5FFAE /* Pods_piggyUITests.framework */; };
+		FB1434F5CC993812FC8D6D7B /* CreateExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D103D9534A0E25337ED9EA64 /* CreateExpenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +74,8 @@
 		0024791D1E0991DE00708539 /* ContactCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCoreDataManager.swift; sourceTree = "<group>"; };
 		0024795C1E0993D400708539 /* CoreDataCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataCoordinator.swift; sourceTree = "<group>"; };
 		008932611DF8833B0047848B /* ListContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactTableViewController.swift; sourceTree = "<group>"; };
+		00D913501E1FEBCE00F7151C /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		00D913541E1FF63000F7151C /* SectionHeaderWithActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderWithActionViewController.swift; sourceTree = "<group>"; };
 		00DA1A2B1DF1E49F00969357 /* piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00DA1A331DF1E49F00969357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,13 +102,30 @@
 		00F6259B1DF9C02E0013E3DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		00F6259E1DF9C0A80013E3DA /* AppDelegate+Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Firebase.swift"; sourceTree = "<group>"; };
 		09B8A2AE22C499A6B9A3E9C3 /* Pods-piggyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-piggyUITests/Pods-piggyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F23A330A029CD38A0B7F18F /* CreateExpenseConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseConfigurator.swift; sourceTree = "<group>"; };
 		152F0000A245E9625D5BBCFC /* Pods_piggyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piggyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22690EBFD159D14600AFA6AE /* Pods-piggy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piggy/Pods-piggy.debug.xcconfig"; sourceTree = "<group>"; };
+		227B76035F36059E781DFC12 /* CreateExpenseViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseViewOutput.swift; sourceTree = "<group>"; };
+		22A56264A519632FCDC2DCE8 /* CreateExpenseInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseInteractorInput.swift; sourceTree = "<group>"; };
+		298EDCC8B40D9BF931263CF4 /* CreateExpensePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpensePresenterTests.swift; sourceTree = "<group>"; };
 		2D1EDC89EE19CA0A057616F9 /* Pods_piggy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piggy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3321D31C59A3F044EF5547CD /* CreateExpenseInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseInitializer.swift; sourceTree = "<group>"; };
+		39F4C70C72860DBDB52EF5F1 /* CreateExpenseConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseConfiguratorTests.swift; sourceTree = "<group>"; };
+		3EE608227BCAE820553F29C3 /* CreateExpenseViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseViewTests.swift; sourceTree = "<group>"; };
+		45CC3E0829D7F24FFF1D71FF /* CreateExpenseInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseInteractorTests.swift; sourceTree = "<group>"; };
+		52AF3624B24647B8FD8D467B /* CreateExpenseRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseRouterTests.swift; sourceTree = "<group>"; };
 		53B9CCE12D54DAB171EF080A /* Pods-piggy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggy.release.xcconfig"; path = "Pods/Target Support Files/Pods-piggy/Pods-piggy.release.xcconfig"; sourceTree = "<group>"; };
+		5B1D05ACF8A88B851A86B22B /* CreateExpenseRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseRouterInput.swift; sourceTree = "<group>"; };
 		68103BB50D2C2A667470CEA8 /* Pods-piggyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-piggyTests/Pods-piggyTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B6AE7328C49368F5E293904 /* CreateExpenseViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseViewInput.swift; sourceTree = "<group>"; };
+		7FD94ADC109ED473CF4D74B5 /* CreateExpenseInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseInteractor.swift; sourceTree = "<group>"; };
+		896794AEFDFC3A45AF9EF8B2 /* CreateExpenseInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseInteractorOutput.swift; sourceTree = "<group>"; };
+		9A2ED47A618332A54CEA354F /* CreateExpenseRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseRouter.swift; sourceTree = "<group>"; };
+		D103D9534A0E25337ED9EA64 /* CreateExpenseViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseViewController.swift; sourceTree = "<group>"; };
+		D8696F83289410686071BB37 /* CreateExpenseModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpenseModuleInput.swift; sourceTree = "<group>"; };
 		DC43C85FDDEE11ACC3A77C54 /* Pods-piggyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piggyUITests/Pods-piggyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE221022BAAB30D14AC17285 /* Pods-piggyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piggyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piggyTests/Pods-piggyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F69E958D936408D34BDF7C6B /* CreateExpensePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateExpensePresenter.swift; sourceTree = "<group>"; };
 		FD18210E771DBB4267B5FFAE /* Pods_piggyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piggyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +157,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D9134F1E1FEBC200F7151C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00D913541E1FF63000F7151C /* SectionHeaderWithActionViewController.swift */,
+				00D913501E1FEBCE00F7151C /* TextFieldTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		00DA1A221DF1E49F00969357 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +201,7 @@
 				00DA1A351DF1E49F00969357 /* Assets.xcassets */,
 				00DA1A371DF1E49F00969357 /* LaunchScreen.storyboard */,
 				00DA1A3A1DF1E49F00969357 /* Info.plist */,
+				2A7D12E1EDE5A5E77B99E97B /* Modules */,
 			);
 			path = piggy;
 			sourceTree = "<group>";
@@ -163,6 +211,7 @@
 			children = (
 				00DA1A431DF1E49F00969357 /* piggyTests.swift */,
 				00DA1A451DF1E49F00969357 /* Info.plist */,
+				070CF08CC4282669D65DE0BF /* CreateExpense */,
 			);
 			path = piggyTests;
 			sourceTree = "<group>";
@@ -191,6 +240,7 @@
 		00E06E0F1DF5D4DB00D41382 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				00D9134F1E1FEBC200F7151C /* Views */,
 				00E06E101DF5D4E600D41382 /* Modules */,
 			);
 			name = Classes;
@@ -235,6 +285,116 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		070CF08CC4282669D65DE0BF /* CreateExpense */ = {
+			isa = PBXGroup;
+			children = (
+				3509F6E8ECF5ADF1DED763A4 /* Configurator */,
+				7CA875A817C55E2899B217BD /* View */,
+				2945ADD3D89860B5BBDB774A /* Interactor */,
+				266B8B84CD915A032976750C /* Presenter */,
+				10C0223A8403B7683A80B917 /* Router */,
+			);
+			path = CreateExpense;
+			sourceTree = "<group>";
+		};
+		10C0223A8403B7683A80B917 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				52AF3624B24647B8FD8D467B /* CreateExpenseRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		266B8B84CD915A032976750C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				298EDCC8B40D9BF931263CF4 /* CreateExpensePresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2945ADD3D89860B5BBDB774A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				45CC3E0829D7F24FFF1D71FF /* CreateExpenseInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2A7D12E1EDE5A5E77B99E97B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D511002DA9A3D37C423EA957 /* CreateExpense */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3509F6E8ECF5ADF1DED763A4 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				39F4C70C72860DBDB52EF5F1 /* CreateExpenseConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		448BE6789F39124E7362D2D7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5B1D05ACF8A88B851A86B22B /* CreateExpenseRouterInput.swift */,
+				9A2ED47A618332A54CEA354F /* CreateExpenseRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		771AFB0510D9DC543BF060EB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				0F23A330A029CD38A0B7F18F /* CreateExpenseConfigurator.swift */,
+				3321D31C59A3F044EF5547CD /* CreateExpenseInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		78BDF49846C06739DF7C470A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B6AE7328C49368F5E293904 /* CreateExpenseViewInput.swift */,
+				227B76035F36059E781DFC12 /* CreateExpenseViewOutput.swift */,
+				D103D9534A0E25337ED9EA64 /* CreateExpenseViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CA875A817C55E2899B217BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EE608227BCAE820553F29C3 /* CreateExpenseViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC83F2343CC8CDF30AFAE940 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				22A56264A519632FCDC2DCE8 /* CreateExpenseInteractorInput.swift */,
+				896794AEFDFC3A45AF9EF8B2 /* CreateExpenseInteractorOutput.swift */,
+				7FD94ADC109ED473CF4D74B5 /* CreateExpenseInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D511002DA9A3D37C423EA957 /* CreateExpense */ = {
+			isa = PBXGroup;
+			children = (
+				78BDF49846C06739DF7C470A /* View */,
+				E32280A2CDB55FC9EB553CD3 /* Presenter */,
+				CC83F2343CC8CDF30AFAE940 /* Interactor */,
+				448BE6789F39124E7362D2D7 /* Router */,
+				771AFB0510D9DC543BF060EB /* Configurator */,
+			);
+			path = CreateExpense;
+			sourceTree = "<group>";
+		};
 		D563CCC5D45995F268C78D28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +416,15 @@
 				09B8A2AE22C499A6B9A3E9C3 /* Pods-piggyUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E32280A2CDB55FC9EB553CD3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D8696F83289410686071BB37 /* CreateExpenseModuleInput.swift */,
+				F69E958D936408D34BDF7C6B /* CreateExpensePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,7 +715,9 @@
 				00F625901DF99DFA0013E3DA /* AddContactInteractor.swift in Sources */,
 				00E06E1B1DF5DFAD00D41382 /* AppRoute.swift in Sources */,
 				00F625961DF9A20E0013E3DA /* ContactFirebaseManager.swift in Sources */,
+				00D913511E1FEBCE00F7151C /* TextFieldTableViewCell.swift in Sources */,
 				00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */,
+				00D913551E1FF63000F7151C /* SectionHeaderWithActionViewController.swift in Sources */,
 				00F625921DF99E130013E3DA /* AddContactPresenter.swift in Sources */,
 				00E06E131DF5D54900D41382 /* ListContactInteractor.swift in Sources */,
 				00F6259F1DF9C0A80013E3DA /* AppDelegate+Firebase.swift in Sources */,
@@ -557,6 +728,18 @@
 				00F6259A1DF9AB050013E3DA /* AddContactViewController.swift in Sources */,
 				008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */,
 				00E06E171DF5D7D900D41382 /* ListContactPresenter.swift in Sources */,
+				7F2C0CD1ABAFA73B333FF3DB /* CreateExpenseViewInput.swift in Sources */,
+				A7210778D860750211FE5A7D /* CreateExpenseViewOutput.swift in Sources */,
+				FB1434F5CC993812FC8D6D7B /* CreateExpenseViewController.swift in Sources */,
+				0E17628D732DB70947DE921B /* CreateExpenseModuleInput.swift in Sources */,
+				037E0B2E742C0C41A4408DA4 /* CreateExpensePresenter.swift in Sources */,
+				C31F601013CB9B92897A43A8 /* CreateExpenseInteractorInput.swift in Sources */,
+				0A5A44BA8086C08B7E093A72 /* CreateExpenseInteractorOutput.swift in Sources */,
+				DBB8C479E60E5C355C130C6C /* CreateExpenseInteractor.swift in Sources */,
+				8B81F955E00E772DE8DD5C8C /* CreateExpenseRouterInput.swift in Sources */,
+				3986C403EF94468AF962601F /* CreateExpenseRouter.swift in Sources */,
+				2B413EA05F5005B9FADEC094 /* CreateExpenseConfigurator.swift in Sources */,
+				54656A7DEF6831E1383C14D1 /* CreateExpenseInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +748,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				00DA1A441DF1E49F00969357 /* piggyTests.swift in Sources */,
+				7E6CE5A70A250E37231F1846 /* CreateExpenseConfiguratorTests.swift in Sources */,
+				451ACE49A37F1433F0020B91 /* CreateExpenseViewTests.swift in Sources */,
+				63069F620AD4B349B8800BF1 /* CreateExpenseInteractorTests.swift in Sources */,
+				8E80CCC81CA67392BDB5C1D4 /* CreateExpensePresenterTests.swift in Sources */,
+				1AF6CCF027C15B656BA5BF92 /* CreateExpenseRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

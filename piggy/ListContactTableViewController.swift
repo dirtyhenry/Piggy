@@ -11,7 +11,6 @@ import UIKit
 class ListContactTableViewController: UITableViewController {
     var eventHandler: ListContactModuleInterface?
     var arraySource: [ContactBalanceViewModel]?
-    var didTapAddContact: () -> () = {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -121,6 +120,10 @@ extension ListContactTableViewController: ListContactViewInterface {
     }
     
     @IBAction func addNewContact() {
-        didTapAddContact()
+        eventHandler?.addNewContact()
+    }
+
+    @IBAction func createExpense() {
+        eventHandler?.didTapCreateExpense()
     }
 }

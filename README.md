@@ -31,3 +31,7 @@ to be used with confidence.
     bundle install
     bundle exec pod install
     rake open
+
+### New module
+
+    generamba gen CreateExpense swifty_viper

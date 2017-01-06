@@ -45,10 +45,10 @@ class AppRoute {
         
         contactListPresenter?.interactor = contactListInteractor
         contactListPresenter?.userInterface = contactListVC
+        contactListPresenter?.router = self
         contactListInteractor.presenter = contactListPresenter
         contactListInteractor.dataManager = contactDataManager
         contactListVC.eventHandler = contactListPresenter
-        contactListVC.didTapAddContact = showAddContact
     }
     
     func showAddContact() {
@@ -88,5 +88,12 @@ extension AppRoute: AddContactModuleDelegate {
     func didSaveAddContactAction() {
         tabBarController.dismiss(animated: true, completion: nil)
         contactListPresenter?.updateView(referenceContactName: nil)
+    }
+}
+
+extension AppRoute: ListContactRouterInput {
+    func presentCreateExpenseInterface() {
+        let createExpenseVC = storyboard.instantiateViewController(withIdentifier: "CreateExpenseVC") as! CreateExpenseViewController
+        oneToOneNC.pushViewController(createExpenseVC, animated: true)
     }
 }

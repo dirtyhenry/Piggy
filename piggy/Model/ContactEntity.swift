@@ -9,7 +9,6 @@
 import UIKit
 
 
-
 struct ContactEntity {
     let name: String
     let isRoot: Bool
