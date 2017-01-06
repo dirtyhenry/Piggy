@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0024791E1E0991DE00708539 /* ContactCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0024791D1E0991DE00708539 /* ContactCoreDataManager.swift */; };
+		0024795D1E0993D400708539 /* CoreDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0024795C1E0993D400708539 /* CoreDataCoordinator.swift */; };
 		008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008932611DF8833B0047848B /* ListContactTableViewController.swift */; };
 		00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */; };
 		00DA1A341DF1E49F00969357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A321DF1E49F00969357 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0024791D1E0991DE00708539 /* ContactCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCoreDataManager.swift; sourceTree = "<group>"; };
+		0024795C1E0993D400708539 /* CoreDataCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataCoordinator.swift; sourceTree = "<group>"; };
 		008932611DF8833B0047848B /* ListContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactTableViewController.swift; sourceTree = "<group>"; };
 		00DA1A2B1DF1E49F00969357 /* piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 				00DA1A5F1DF1EB9600969357 /* piggy-model.xcdatamodeld */,
 				00E06E141DF5D6CB00D41382 /* ContactEntity.swift */,
 				00F625951DF9A20E0013E3DA /* ContactFirebaseManager.swift */,
+				0024791D1E0991DE00708539 /* ContactCoreDataManager.swift */,
+				0024795C1E0993D400708539 /* CoreDataCoordinator.swift */,
 			);
 			name = "Model layer";
 			sourceTree = "<group>";
@@ -535,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0024791E1E0991DE00708539 /* ContactCoreDataManager.swift in Sources */,
 				00F625941DF99E230013E3DA /* AddContactModuleInterface.swift in Sources */,
 				00F625901DF99DFA0013E3DA /* AddContactInteractor.swift in Sources */,
 				00E06E1B1DF5DFAD00D41382 /* AppRoute.swift in Sources */,
@@ -545,6 +552,7 @@
 				00F6259F1DF9C0A80013E3DA /* AppDelegate+Firebase.swift in Sources */,
 				00E06E151DF5D6CB00D41382 /* ContactEntity.swift in Sources */,
 				00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */,
+				0024795D1E0993D400708539 /* CoreDataCoordinator.swift in Sources */,
 				00E06E191DF5DBC500D41382 /* ListContactModuleInterface.swift in Sources */,
 				00F6259A1DF9AB050013E3DA /* AddContactViewController.swift in Sources */,
 				008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */,
@@ -706,7 +714,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7HX93AP7WL;
 				INFOPLIST_FILE = piggy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootstragram.piggy.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -722,7 +730,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7HX93AP7WL;
 				INFOPLIST_FILE = piggy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootstragram.piggy;
 				PRODUCT_NAME = "$(TARGET_NAME)";

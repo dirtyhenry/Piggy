@@ -9,7 +9,10 @@
 import UIKit
 import Firebase
 
+/// This class isolates all delegate-level calls depending on the Firebase pods.
+/// For more information about them, please refer to Firebase's iOS SDK online documentation.
 class AppDelegateFirebase {
+    /// Configure Firebase. Required by Firebase.
     func configure() {
         FIRApp.configure()
     }

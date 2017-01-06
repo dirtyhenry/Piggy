@@ -20,7 +20,7 @@ extension AddContactInteractor: AddContactInteractorInput {
             if success {
                 presenter?.savedNewContact(name: name)
             } else {
-                presenter?.failedSavingNewContact(name: name, error: error)
+                presenter?.failedSavingNewContact(name: name, error: error!)
             }
         })
     }
