@@ -38,7 +38,7 @@ extension ContactCoreDataManager: AddContactDataManager {
         let newContact = NSEntityDescription.insertNewObject(forEntityName: "Contact", into: stack.persistentContainer.viewContext) as! Contact
         newContact.name = contact.name
         newContact.me = contact.isRoot
-        //stack.saveContext()
+        stack.saveContext()
         completion(true, nil)
     }
 }
