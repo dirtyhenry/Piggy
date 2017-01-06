@@ -11,7 +11,6 @@
 		0024795D1E0993D400708539 /* CoreDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0024795C1E0993D400708539 /* CoreDataCoordinator.swift */; };
 		008932621DF8833B0047848B /* ListContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008932611DF8833B0047848B /* ListContactTableViewController.swift */; };
 		00D913511E1FEBCE00F7151C /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D913501E1FEBCE00F7151C /* TextFieldTableViewCell.swift */; };
-		00D913551E1FF63000F7151C /* SectionHeaderWithActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D913541E1FF63000F7151C /* SectionHeaderWithActionViewController.swift */; };
 		00DA1A2F1DF1E49F00969357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */; };
 		00DA1A341DF1E49F00969357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A321DF1E49F00969357 /* Main.storyboard */; };
 		00DA1A361DF1E49F00969357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00DA1A351DF1E49F00969357 /* Assets.xcassets */; };
@@ -75,7 +74,6 @@
 		0024795C1E0993D400708539 /* CoreDataCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataCoordinator.swift; sourceTree = "<group>"; };
 		008932611DF8833B0047848B /* ListContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListContactTableViewController.swift; sourceTree = "<group>"; };
 		00D913501E1FEBCE00F7151C /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
-		00D913541E1FF63000F7151C /* SectionHeaderWithActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderWithActionViewController.swift; sourceTree = "<group>"; };
 		00DA1A2B1DF1E49F00969357 /* piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00DA1A2E1DF1E49F00969357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00DA1A331DF1E49F00969357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 		00D9134F1E1FEBC200F7151C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				00D913541E1FF63000F7151C /* SectionHeaderWithActionViewController.swift */,
 				00D913501E1FEBCE00F7151C /* TextFieldTableViewCell.swift */,
 			);
 			name = Views;
@@ -717,7 +714,6 @@
 				00F625961DF9A20E0013E3DA /* ContactFirebaseManager.swift in Sources */,
 				00D913511E1FEBCE00F7151C /* TextFieldTableViewCell.swift in Sources */,
 				00DA1A611DF1EB9600969357 /* piggy-model.xcdatamodeld in Sources */,
-				00D913551E1FF63000F7151C /* SectionHeaderWithActionViewController.swift in Sources */,
 				00F625921DF99E130013E3DA /* AddContactPresenter.swift in Sources */,
 				00E06E131DF5D54900D41382 /* ListContactInteractor.swift in Sources */,
 				00F6259F1DF9C0A80013E3DA /* AppDelegate+Firebase.swift in Sources */,

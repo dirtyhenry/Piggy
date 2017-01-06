@@ -11,12 +11,13 @@ import UIKit
 class CreateExpenseModuleInitializer: NSObject {
 
     //Connect with object on storyboard
-    @IBOutlet weak var createexpenseViewController: CreateExpenseViewController!
+    @IBOutlet weak var createExpenseViewController: CreateExpenseViewController!
 
     override func awakeFromNib() {
-
         let configurator = CreateExpenseModuleConfigurator()
-        configurator.configureModuleForViewInput(viewInput: createexpenseViewController)
+        configurator.configureModuleForViewInput(viewInput: createExpenseViewController) {
+            // Do nothing
+        }
     }
 
 }

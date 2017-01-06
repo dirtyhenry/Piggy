@@ -9,5 +9,6 @@
 import Foundation
 
 protocol CreateExpenseRouterInput {
-
+    func shouldDismiss()
 }
+

@@ -75,7 +75,23 @@
             </objects>
             <point key="canvasLocation" x="294" y="280"/>
         </scene>
-        <!--Createexpense View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="LL2-fY-0j3">
+            <objects>
+                <navigationController storyboardIdentifier="CreateExpenseNC" id="RnH-wn-Tdu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZuD-bF-u3p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hnm-nN-7HQ" kind="relationship" relationship="rootViewController" id="MmA-Z3-ezJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cq8-rQ-UBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-658" y="1740"/>
+        </scene>
+        <!--Create Expense View Controller-->
         <scene sceneID="ur8-hV-Fpb">
             <objects>
                 <tableViewController storyboardIdentifier="CreateExpenseVC" id="Hnm-nN-7HQ" customClass="CreateExpenseViewController" customModule="piggy" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,15 +156,22 @@
                             <outlet property="delegate" destination="Hnm-nN-7HQ" id="KOO-1t-B6i"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="q63-8U-Pzx">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hWe-Zi-oE7">
+                            <connections>
+                                <action selector="cancelActionWithSender:" destination="Hnm-nN-7HQ" id="ZS4-j6-fmn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="a8u-6W-PZS">
+                            <connections>
+                                <action selector="confirmActionWithSender:" destination="Hnm-nN-7HQ" id="5Sa-u8-h5w"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMV-0l-4Kv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="cVj-m8-Kjh" customClass="CreateExpenseModuleInitializer" customModule="piggy" customModuleProvider="target">
-                    <connections>
-                        <outlet property="createexpenseViewController" destination="Hnm-nN-7HQ" id="Ei3-tn-HCl"/>
-                    </connections>
-                </customObject>
             </objects>
-            <point key="canvasLocation" x="1143" y="279"/>
+            <point key="canvasLocation" x="294" y="1739"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HiE-aB-tgO">
@@ -156,7 +179,7 @@
                 <navigationController storyboardIdentifier="AddContactNC" id="LvJ-xG-Dvs" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="DGy-na-B5J">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DGy-na-B5J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -214,46 +237,13 @@
             </objects>
             <point key="canvasLocation" x="293.60000000000002" y="1011.544227886057"/>
         </scene>
-        <!--Section Header With Action View Controller-->
-        <scene sceneID="gPz-7O-uZt">
-            <objects>
-                <viewController id="otP-k8-xfg" customClass="SectionHeaderWithActionViewController" customModule="piggy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="D1X-v5-Iy4"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ueh-eb-z1e"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IUt-hI-MCd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C0-Dz-9Hq">
-                                <rect key="frame" x="329" y="8" width="22" height="22"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="9C0-Dz-9Hq" secondAttribute="trailing" constant="8" id="Q7e-wl-n7L"/>
-                            <constraint firstItem="9C0-Dz-9Hq" firstAttribute="top" secondItem="D1X-v5-Iy4" secondAttribute="bottom" constant="8" id="XVH-UJ-LcZ"/>
-                            <constraint firstItem="Ueh-eb-z1e" firstAttribute="top" secondItem="9C0-Dz-9Hq" secondAttribute="bottom" constant="8" id="ac3-VO-7go"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="38"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="40d-Pw-aaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1310" y="982"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="m4b-gc-8i8">
             <objects>
                 <navigationController storyboardIdentifier="OneToOneNC" id="2CV-YK-0cX" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EDj-iw-aVF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EDj-iw-aVF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -93,7 +93,15 @@ extension AppRoute: AddContactModuleDelegate {
 
 extension AppRoute: ListContactRouterInput {
     func presentCreateExpenseInterface() {
-        let createExpenseVC = storyboard.instantiateViewController(withIdentifier: "CreateExpenseVC") as! CreateExpenseViewController
-        oneToOneNC.pushViewController(createExpenseVC, animated: true)
+        let createExpenseNC = storyboard.instantiateViewController(withIdentifier: "CreateExpenseNC") as! UINavigationController
+        createExpenseNC.modalPresentationStyle = .overCurrentContext
+
+        let createExpenseVC = createExpenseNC.viewControllers[0] as! CreateExpenseViewController
+        let configurator = CreateExpenseModuleConfigurator()
+        configurator.configureModuleForViewInput(viewInput: createExpenseVC) {
+            self.tabBarController.dismiss(animated: true, completion: nil)
+        }
+
+        tabBarController.present(createExpenseNC, animated: true, completion: nil)
     }
 }

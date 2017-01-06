@@ -10,16 +10,15 @@ import UIKit
 
 class CreateExpenseModuleConfigurator {
 
-    func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
-
+    func configureModuleForViewInput<UIViewController>(viewInput: UIViewController, dismiss: (() -> ())?) {
         if let viewController = viewInput as? CreateExpenseViewController {
-            configure(viewController: viewController)
+            configure(viewController: viewController, dismiss: dismiss)
         }
     }
 
-    private func configure(viewController: CreateExpenseViewController) {
-
+    private func configure(viewController: CreateExpenseViewController, dismiss: (() -> ())?) {
         let router = CreateExpenseRouter()
+        router.dismissHandler = dismiss
 
         let presenter = CreateExpensePresenter()
         presenter.view = viewController

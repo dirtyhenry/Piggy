@@ -7,5 +7,9 @@
 //
 
 class CreateExpenseRouter: CreateExpenseRouterInput {
+    var dismissHandler: (() -> ())?
 
+    func shouldDismiss() {
+        dismissHandler?()
+    }
 }

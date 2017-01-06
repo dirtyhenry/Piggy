@@ -14,4 +14,8 @@ protocol CreateExpenseViewOutput {
     */
 
     func viewIsReady()
+
+
+    func didTapCancelCreateExpense()
+    func didTapConfirmCreateExpense()
 }

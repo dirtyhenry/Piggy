@@ -91,4 +91,12 @@ class CreateExpenseViewController: UITableViewController, CreateExpenseViewInput
         }
         return res
     }
+
+    @IBAction func cancelAction(sender: AnyObject?) {
+        output.didTapCancelCreateExpense()
+    }
+
+    @IBAction func confirmAction(sender: AnyObject?) {
+        output.didTapConfirmCreateExpense()
+    }
 }

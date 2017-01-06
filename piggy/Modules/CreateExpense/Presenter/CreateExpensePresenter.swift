@@ -15,4 +15,12 @@ class CreateExpensePresenter: CreateExpenseModuleInput, CreateExpenseViewOutput,
     func viewIsReady() {
         view.setupInitialState()
     }
+
+    internal func didTapCancelCreateExpense() {
+        router.shouldDismiss()
+    }
+
+    internal func didTapConfirmCreateExpense() {
+        // Do nothing
+    }
 }
