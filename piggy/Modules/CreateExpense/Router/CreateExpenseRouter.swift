@@ -6,10 +6,21 @@
 //  Copyright © 2017 Bootstragram. All rights reserved.
 //
 
+import UIKit
+
+// FIXME: I don't really like this part. 
+// Make sure how the generator objects are supposed to be used!
 class CreateExpenseRouter: CreateExpenseRouterInput {
-    var dismissHandler: (() -> ())?
+    var dismissHandler: () -> () = { }
+    var presentSelectContactInterfaceHandler: ([String]) -> () = { _ in }
 
     func shouldDismiss() {
-        dismissHandler?()
+        dismissHandler()
+    }
+
+    func shouldPresentSelectContactInterface(currentSelection: [String],
+                                             callback: ([String]) -> ()) {
+        presentSelectContactInterfaceHandler(currentSelection)
+
     }
 }

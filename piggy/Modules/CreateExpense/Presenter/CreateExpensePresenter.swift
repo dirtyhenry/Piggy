@@ -12,6 +12,9 @@ class CreateExpensePresenter: CreateExpenseModuleInput, CreateExpenseViewOutput,
     var interactor: CreateExpenseInteractorInput!
     var router: CreateExpenseRouterInput!
 
+    var payers: [String] = []
+    var benefiters: [String] = []
+
     func viewIsReady() {
         view.setupInitialState()
     }
@@ -22,5 +25,26 @@ class CreateExpensePresenter: CreateExpenseModuleInput, CreateExpenseViewOutput,
 
     internal func didTapConfirmCreateExpense() {
         // Do nothing
+    }
+
+    internal func didTapSelectContactForSection(section: Int, currentSelection: [String]) {
+        router.shouldPresentSelectContactInterface(currentSelection: currentSelection) { newContactSelection in
+            // TODO: this is shit, use an enum or something
+            if section == 1 {
+                updatePayers(newContactSelection)
+            }
+
+            if section == 2 {
+                updatePayers(newContactSelection)
+            }
+        }
+    }
+
+    func updatePayers(_ newValue: [String]) {
+        payers = newValue
+    }
+
+    func updateBenefiters(_ newValue: [String]) {
+        benefiters = newValue
     }
 }

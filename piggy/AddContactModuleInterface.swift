@@ -15,7 +15,7 @@ protocol AddContactModuleInterface {
 
 protocol AddContactModuleDelegate {
     func didCancelAddContactAction()
-    func didSaveAddContactAction()
+    func didSaveAddContactAction(name: String)
 }
 
 protocol AddContactInteractorInput {

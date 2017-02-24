@@ -10,5 +10,6 @@ import Foundation
 
 protocol CreateExpenseRouterInput {
     func shouldDismiss()
+    func shouldPresentSelectContactInterface(currentSelection: [String], callback: ([String]) -> ())
 }
 

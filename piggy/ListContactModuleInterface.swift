@@ -76,4 +76,8 @@ protocol ListContactDataManager {
     /// - Parameter except: name to exclude from the fetch request
     /// - Returns: an array of Contact elements
     func fetchAllContacts(except: String?) -> [Contact]
+
+    func fetchAllContacts() -> [Contact]
+
+    func fetchContactsForEvent(event: String) -> [Contact]
 }

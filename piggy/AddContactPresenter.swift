@@ -26,7 +26,7 @@ extension AddContactPresenter: AddContactModuleInterface {
 
 extension AddContactPresenter: AddContactInteractorOutput {
     func savedNewContact(name: String) {
-        delegate?.didSaveAddContactAction()
+        delegate?.didSaveAddContactAction(name: name)
     }
 
     func failedSavingNewContact(name: String, error: NSError) {

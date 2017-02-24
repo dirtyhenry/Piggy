@@ -18,4 +18,6 @@ protocol CreateExpenseViewOutput {
 
     func didTapCancelCreateExpense()
     func didTapConfirmCreateExpense()
+
+    func didTapSelectContactForSection(section: Int, currentSelection: [String])
 }

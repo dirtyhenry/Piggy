@@ -7,5 +7,6 @@
 //
 
 protocol CreateExpenseModuleInput: class {
-    
+    func updatePayers(_ newValue: [String])
+    func updateBenefiters(_ newValue: [String])
 }

@@ -31,6 +31,15 @@ extension ContactCoreDataManager: ListContactDataManager {
         }
         return []
     }
+
+    internal func fetchAllContacts() -> [Contact] {
+        return fetchAllContacts(except: nil)
+    }
+
+    internal func fetchContactsForEvent(event: String) -> [Contact] {
+        // FIXME: do something about this
+        return fetchAllContacts()
+    }
 }
 
 extension ContactCoreDataManager: AddContactDataManager {

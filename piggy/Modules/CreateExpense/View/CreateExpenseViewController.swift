@@ -19,10 +19,7 @@ class CreateExpenseViewController: UITableViewController, CreateExpenseViewInput
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
-
-
     }
-
 
     // MARK: CreateExpenseViewInput
     func setupInitialState() {
@@ -66,6 +63,19 @@ class CreateExpenseViewController: UITableViewController, CreateExpenseViewInput
             return "Benefiters"
         default:
             return nil
+        }
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 1:
+            return output.didTapSelectContactForSection(section: indexPath.section,
+                                                        currentSelection: selectedPayers)
+        case 2:
+            return output.didTapSelectContactForSection(section: indexPath.section,
+                                                        currentSelection: selectedBenefiters)
+        default:
+            return
         }
     }
 
