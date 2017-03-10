@@ -24,11 +24,22 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.0)
   - GoogleToolboxForMac/NSData+zlib (2.1.0):
     - GoogleToolboxForMac/Defines (= 2.1.0)
+  - Martinet (0.1.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - FontAwesome.swift
+  - Martinet (from `https://github.com/Bootstragram/Martinet`)
+
+EXTERNAL SOURCES:
+  Martinet:
+    :git: https://github.com/Bootstragram/Martinet
+
+CHECKOUT OPTIONS:
+  Martinet:
+    :commit: 4c6a1ee4ca0618c6b913d4ce3342b6e8f2be92dc
+    :git: https://github.com/Bootstragram/Martinet
 
 SPEC CHECKSUMS:
   Firebase: 387f37c7dca894a02708da9ff35ba147040eae9e
@@ -40,7 +51,8 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
+  Martinet: 0f4e11cac5527077413be2b08b648161410d43de
 
-PODFILE CHECKSUM: 73c1c0a3559d5472871ecbf6699ce80526c48df3
+PODFILE CHECKSUM: f996037b7ed8edd134ac5546402be41a97f2c5a2
 
 COCOAPODS: 1.1.1

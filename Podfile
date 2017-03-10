@@ -9,6 +9,7 @@ target 'piggy' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'FontAwesome.swift'
+  pod 'Martinet', :git => 'https://github.com/Bootstragram/Martinet'
 
   target 'piggyTests' do
     inherit! :search_paths

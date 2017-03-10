@@ -14,12 +14,9 @@ import FontAwesome_swift
 class AppRoute {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let tabBarController: UITabBarController
+    let oneToOneRoute: OneToOneRoute
 
-    // FIXME: move to a One-To-One dedicated route
-    let oneToOneNC: UINavigationController
     let coreDataStack = CoreDataCoordinator(modelName: "piggy-model")
-    // FIXME: this should be better designed
-    var selectContactVC: SelectContactViewController?
 
     // FIXME: this shouldn't be here
     var contactListPresenter: ListContactPresenter?
@@ -27,35 +24,22 @@ class AppRoute {
     init(window: UIWindow) {
         tabBarController = window.rootViewController as! UITabBarController
 
-        oneToOneNC = storyboard.instantiateViewController(withIdentifier: "OneToOneNC") as! UINavigationController
-        wireContactListComponents()
+        oneToOneRoute = OneToOneRoute()
+        let oneToOneTabImage = UIImage.fontAwesomeIcon(name: .users,
+                                                       textColor: UIColor.black,
+                                                       size: sizeForTabBarItem())
+        oneToOneRoute.rootViewController.tabBarItem = UITabBarItem(title: "One-to-One",
+                                                                   image: oneToOneTabImage,
+                                                                   tag: 1)
 
-        let oneToOneTabImage = UIImage.fontAwesomeIcon(name: .users, textColor: UIColor.black, size: sizeForTabBarItem())
-        oneToOneNC.tabBarItem = UITabBarItem(title: "One-to-One",
-                                             image: oneToOneTabImage,
-                                             tag: 1)
-
-        tabBarController.setViewControllers([oneToOneNC], animated: false)
+        tabBarController.setViewControllers([oneToOneRoute.rootViewController],
+                                            animated: false)
     }
 
 
-    func wireContactListComponents() {
-        let contactListVC = oneToOneNC.viewControllers[0] as! ListContactTableViewController
-        self.contactListPresenter = ListContactPresenter()
-        let contactListInteractor = ListContactInteractor()
-
-        let contactDataManager = ContactCoreDataManager(stack: coreDataStack)
-
-        contactListPresenter?.interactor = contactListInteractor
-        contactListPresenter?.userInterface = contactListVC
-        contactListPresenter?.router = self
-        contactListInteractor.presenter = contactListPresenter
-        contactListInteractor.dataManager = contactDataManager
-        contactListVC.eventHandler = contactListPresenter
-    }
 
     func heightOfTabBarItem() -> CGFloat {
-        return CGFloat(UIScreen.main.scale) * CGFloat(25.0);
+        return CGFloat(25.0);
     }
 
     func sizeForTabBarItem() -> CGSize {
@@ -74,11 +58,11 @@ extension AppRoute: AddContactModuleDelegate {
         let navigationController = tabBarController.presentedViewController as! UINavigationController
         navigationController.popViewController(animated: true)
 
-        if let selectContactVC = selectContactVC {
-            // FIXME: this is gross
-            let presenter = selectContactVC.output as! SelectContactPresenter
-            presenter.addContactToCurrentSelection(contactToAdd: name)
-        }
+//        if let selectContactVC = selectContactVC {
+//            // FIXME: this is gross
+//            let presenter = selectContactVC.output as! SelectContactPresenter
+//            presenter.addContactToCurrentSelection(contactToAdd: name)
+//        }
     }
 }
 
@@ -99,7 +83,7 @@ extension AppRoute: ListContactRouterInput {
         self.tabBarController.dismiss(animated: true, completion: nil)
     }
 
-    func presentSelectContact(currentSelection: [String]) -> SelectContactModuleInput? {
+//    func presentSelectContact(currentSelection: [String]) -> SelectContactModuleInput? {
 //        self.selectContactVC = storyboard.instantiateViewController(withIdentifier: "SelectContactInterface") as? SelectContactViewController
 //        if let selectContactVC = selectContactVC {
 //            let configurator = SelectContactModuleConfigurator()
@@ -115,8 +99,8 @@ extension AppRoute: ListContactRouterInput {
 //
 //            return result
 //        }
-        return nil
-    }
+//        return nil
+//    }
 
     func showAddContact() {
         let navigationController = tabBarController.presentedViewController as! UINavigationController

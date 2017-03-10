@@ -1,0 +1,6 @@
+framework module Martinet {
+  umbrella header "Martinet-umbrella.h"
+
+  export *
+  module * { export * }
+}
