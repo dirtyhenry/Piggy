@@ -18,6 +18,24 @@ at bootstragram.com.
 Nonetheless, we do care a lot about people using Piggy and it is stable enough
 to be used with confidence.
 
+## What is Piggy?
+
+### How to use it?
+
+- Les événements ({events}) vous permettent de gérer vos comptes lorsque vous partez en week-end ou en vacances avec vos amis. Sélectionnez les participants et renseignez les notes pour chacun de vos achats communs. En fin d'événement, soldez vos comptes : Piggy vous indiquera qui doit combien à qui 
+- Pour le quotidien et les amis que vous fréquentez régulièrement, utilisez le {one-to-one}, qui vous permet de gérer vos comptes avec vos amis les plus proches. Pour une sortie entre amis, au bar ou au restaurant, Piggy vous indiquera qui devra offrir la prochaine tournée !
+
+### Features
+
+- Création/suppression de notes, de contacts et d'événements
+- Les contacts peuvent être importés depuis le carnet d'adresses
+- Bascule de l'état comptes d'un événement sur le one-to-one
+- Consultation de l'historique des dépenses (date, description, montant et participants d'une dépense)
+
+### Technical Requirements
+
+- Fonctionne avec la version 4.1 et ultérieures d'iOS (iPhone/iPod Touch et iPad)
+- Disponible en version française et anglaise
 
 ## Development
 
@@ -31,3 +49,10 @@ to be used with confidence.
     bundle install
     bundle exec pod install
     rake open
+
+## Legacy version Release Notes
+
+### 1.1 (2011/02/12)
+
+* new graphic design;
+* support of notes/contacts/events **deletions** (note: only contacts without notes attached can be deleted)
